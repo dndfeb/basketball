@@ -24,6 +24,7 @@ const inter = Inter({
  * - Font optimization
  */
 export const metadata = {
+  metadataBase: new URL('https://elitebasketball.com'),
   title: {
     default: 'Elite Basketball Coaching & Court Center - Professional Training',
     template: '%s | Elite Basketball Coaching',
@@ -41,7 +42,7 @@ export const metadata = {
     description: 'Professional basketball coaching, skill clinics, team training, and court rentals. USA Basketball certified coaches developing players of all levels for over 15 years.',
     images: [
       {
-        url: 'https://elitebasketball.com/og-image.jpg',
+        url: '/og-image.jpg',
         width: 1200,
         height: 630,
         alt: 'Elite Basketball Coaching - Professional Basketball Training',
@@ -52,7 +53,7 @@ export const metadata = {
     card: 'summary_large_image',
     title: 'Elite Basketball Coaching & Court Center - Professional Training',
     description: 'Professional basketball coaching, skill clinics, team training, and court rentals. USA Basketball certified coaches developing players of all levels for over 15 years.',
-    images: ['https://elitebasketball.com/og-image.jpg'],
+    images: ['/og-image.jpg'],
   },
   robots: {
     index: true,
