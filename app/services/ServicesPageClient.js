@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
+import ShuffleServices from '../../components/sections/ShuffleServices';
 // Using inline SVG icons instead of react-icons to avoid import issues
 
 /**
@@ -141,6 +142,11 @@ export default function ServicesPageClient() {
             Your safety is our priority with certified technicians and reliable protection systems.
           </p>
         </div>
+      </section>
+
+      {/* Shuffle Products Section */}
+      <section className="py-20 bg-white">
+        <ShuffleServices />
       </section>
 
       {/* Services Grid */}
