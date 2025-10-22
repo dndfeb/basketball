@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 /**
  * Navbar Component
@@ -15,6 +16,7 @@ import Link from 'next/link';
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const pathname = usePathname();
 
   // Handle scroll effect
   useEffect(() => {
@@ -52,6 +54,14 @@ export default function Navbar() {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  // Check if a link is active
+  const isActive = (href) => {
+    if (href === '/') {
+      return pathname === '/';
+    }
+    return pathname.startsWith(href);
+  };
+
   const navItems = [
     { href: '/', label: 'Home' },
     { href: '/about', label: 'About' },
@@ -82,7 +92,11 @@ export default function Navbar() {
                   <Link
                     key={item.href}
                     href={item.href}
-                    className="text-neutral-700 hover:text-primary-500 px-3 py-2 text-sm font-medium transition-colors duration-200"
+                    className={`px-3 py-2 text-sm font-medium transition-colors duration-200 ${
+                      isActive(item.href)
+                        ? 'text-primary-500'
+                        : 'text-neutral-700 hover:text-primary-500'
+                    }`}
                   >
                     {item.label}
                   </Link>
@@ -141,7 +155,11 @@ export default function Navbar() {
                   <Link
                     key={item.href}
                     href={item.href}
-                    className="text-neutral-700 hover:text-primary-500 block px-3 py-2 text-base font-medium transition-colors duration-200"
+                    className={`block px-3 py-2 text-base font-medium transition-colors duration-200 ${
+                      isActive(item.href)
+                        ? 'text-primary-500'
+                        : 'text-neutral-700 hover:text-primary-500'
+                    }`}
                     onClick={() => setIsMenuOpen(false)}
                   >
                     {item.label}
