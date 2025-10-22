@@ -139,7 +139,7 @@ export default function AboutPage() {
             <div className="relative">
               <div className="relative w-full h-96 rounded-2xl overflow-hidden">
                 <img 
-                  src="/coach-2.jpg" 
+                  src="/basketball/full-shot-man-with-basket-ball.jpg" 
                   alt="Basketball coach working with players on court"
                   className="w-full h-full object-cover"
                 />

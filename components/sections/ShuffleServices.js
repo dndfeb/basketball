@@ -34,83 +34,83 @@ const shuffle = (array) => {
 const serviceImages = [
   {
     id: 1,
-    src: "/service-shooting.jpg",
+    src: "/basketball/portrait-man-holding-basketball.jpg",
     title: "Private Coaching"
   },
   {
     id: 2,
-    src: "/clinic-1.jpg",
+    src: "/basketball/markus-spiske-WNJVjkjkh44-unsplash.jpg",
     title: "Group Clinics"
   },
   {
     id: 3,
-    src: "/team-training.jpg",
+    src: "/basketball/full-shot-man-with-basket-ball.jpg",
     title: "Team Training"
   },
   {
     id: 4,
-    src: "/court-1.jpg",
+    src: "/basketball/pexels-pixabay-69773.jpg",
     title: "Court Rental"
   },
   {
     id: 5,
-    src: "/service-defence.jpg",
+    src: "/basketball/full-shot-man-carrying-kid.jpg",
     title: "Skill Assessment"
   },
   {
     id: 6,
-    src: "/youth-program.jpg",
+    src: "/basketball/179.jpg",
     title: "Youth Programs"
   },
   {
     id: 7,
-    src: "/coach-1.jpg",
+    src: "/basketball/portrait-man-holding-basketball.jpg",
     title: "Expert Coaching"
   },
   {
     id: 8,
-    src: "/coach-2.jpg",
+    src: "/basketball/full-shot-man-with-basket-ball.jpg",
     title: "Professional Training"
   },
   {
     id: 9,
-    src: "/clinic-2.jpg",
+    src: "/basketball/markus-spiske-WNJVjkjkh44-unsplash (1).jpg",
     title: "Basketball Clinics"
   },
   {
     id: 10,
-    src: "/court-2.jpg",
+    src: "/basketball/pexels-pixabay-69773.jpg",
     title: "Court Facilities"
   },
   {
     id: 11,
-    src: "/service-shooting.jpg",
+    src: "/basketball/portrait-man-holding-basketball.jpg",
     title: "Shooting Training"
   },
   {
     id: 12,
-    src: "/service-defence.jpg",
+    src: "/basketball/full-shot-man-carrying-kid.jpg",
     title: "Defensive Skills"
   },
   {
     id: 13,
-    src: "/youth-program.jpg",
+    src: "/basketball/179.jpg",
     title: "Youth Development"
   },
   // Repeat some popular images to fill 16 slots
   {
     id: 14,
-    src: "/service-shooting.jpg",
+    src: "/basketball/portrait-man-holding-basketball.jpg",
     title: "Advanced Shooting"
   },
   {
     id: 15,
-    src: "/clinic-1.jpg",
+    src: "/basketball/markus-spiske-WNJVjkjkh44-unsplash.jpg",
     title: "Elite Clinics"
   },
   {
     id: 16,
-    src: "/team-training.jpg",
+    src: "/basketball/full-shot-man-with-basket-ball.jpg",
     title: "Team Development"
   },
 ];

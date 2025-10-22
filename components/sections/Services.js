@@ -168,12 +168,12 @@ export default function Services() {
           {services.map((service, index) => {
             // Use different basketball images for each service
             const serviceImages = [
-              '/service-shooting.jpg',
-              '/clinic-1.jpg',
-              '/team-training.jpg',
-              '/court-1.jpg',
-              '/service-defence.jpg',
-              '/youth-program.jpg'
+              '/basketball/portrait-man-holding-basketball.jpg',
+              '/basketball/markus-spiske-WNJVjkjkh44-unsplash.jpg',
+              '/basketball/full-shot-man-with-basket-ball.jpg',
+              '/basketball/pexels-pixabay-69773.jpg',
+              '/basketball/full-shot-man-carrying-kid.jpg',
+              '/basketball/179.jpg'
             ];
             
             return (

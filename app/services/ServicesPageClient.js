@@ -59,7 +59,7 @@ export default function ServicesPageClient() {
       description: 'Personalized sessions to improve shooting, ball-handling, and game IQ.',
       features: ['Fundamentals Focus', 'Individual Development', 'Video Analysis', 'Progress Tracking'],
       price: 'From $89',
-      image: '/service-shooting.jpg'
+      image: '/basketball/portrait-man-holding-basketball.jpg'
     },
     {
       icon: (
@@ -71,7 +71,7 @@ export default function ServicesPageClient() {
       description: 'Intensive skill development for small groups or seasonal camps.',
       features: ['High-Energy Drills', 'Competitive Scrimmages', 'Skill Stations', 'Team Building'],
       price: 'From $299',
-      image: '/clinic-1.jpg'
+      image: '/basketball/markus-spiske-WNJVjkjkh44-unsplash.jpg'
     },
     {
       icon: (
@@ -83,7 +83,7 @@ export default function ServicesPageClient() {
       description: 'Practice planning, scrimmage management, and tactical drills for teams.',
       features: ['Tactical Sessions', 'Team Performance', 'Strategy Development', 'Game Preparation'],
       price: 'From $199',
-      image: '/team-training.jpg'
+      image: '/basketball/full-shot-man-with-basket-ball.jpg'
     },
     {
       icon: (
@@ -95,7 +95,7 @@ export default function ServicesPageClient() {
       description: 'Hourly court bookings, equipment, and booking policies.',
       features: ['Professional Courts', 'Equipment Available', 'Flexible Booking', 'Group Rates'],
       price: 'From $25/hr',
-      image: '/court-1.jpg'
+      image: '/basketball/pexels-pixabay-69773.jpg'
     },
     {
       icon: (
@@ -107,7 +107,7 @@ export default function ServicesPageClient() {
       description: 'Video breakdowns, strengths/weaknesses, and improvement plans.',
       features: ['Video Analysis', 'Performance Reports', 'Improvement Plans', 'Progress Tracking'],
       price: 'From $99',
-      image: '/service-defence.jpg'
+      image: '/basketball/full-shot-man-carrying-kid.jpg'
     },
     {
       icon: (
@@ -119,7 +119,7 @@ export default function ServicesPageClient() {
       description: 'Age-appropriate training programs for young players.',
       features: ['Age-Specific Training', 'Fun Learning Environment', 'Character Development', 'Parent Updates'],
       price: 'From $149',
-      image: '/youth-program.jpg'
+      image: '/basketball/179.jpg'
     },
   ];
 

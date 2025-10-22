@@ -113,7 +113,7 @@ export default function Navbar() {
             {/* Logo */}
             <div className="flex-shrink-0">
               <Link href="/" className="text-2xl font-bold text-neutral-900">
-                <span className="text-primary-500">Fire</span>Guard
+                <span className="text-primary-500">Elite</span>Basketball
               </Link>
             </div>
 
@@ -145,7 +145,7 @@ export default function Navbar() {
                 href="/contact"
                 className="btn btn-primary"
               >
-                Get Quote
+                Book Session
               </Link>
             </div>
 
@@ -208,7 +208,7 @@ export default function Navbar() {
                   className="btn btn-primary block w-full text-center mt-4"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  Get Quote
+                  Book Session
                 </Link>
               </div>
             </div>

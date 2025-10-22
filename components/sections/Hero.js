@@ -118,7 +118,7 @@ export default function Hero() {
       ref={heroRef}
       className="relative h-[85vh] flex items-center justify-center overflow-hidden"
       style={{
-        backgroundImage: `url('/hero-basketball.jpg')`,
+        backgroundImage: `url('/hero.jpg')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat'

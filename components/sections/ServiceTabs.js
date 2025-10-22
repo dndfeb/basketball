@@ -74,7 +74,7 @@ const serviceCategories = [
       'Game Strategy',
       'Mental Toughness Training'
     ],
-    image: '/service-shooting.jpg'
+    image: '/basketball/portrait-man-holding-basketball.jpg'
   },
   {
     id: 'clinics',
@@ -89,7 +89,7 @@ const serviceCategories = [
       'Position-Specific Training',
       'Conditioning Programs'
     ],
-    image: '/clinic-1.jpg'
+    image: '/basketball/markus-spiske-WNJVjkjkh44-unsplash.jpg'
   },
   {
     id: 'teams',
@@ -104,7 +104,7 @@ const serviceCategories = [
       'Leadership Training',
       'Team Chemistry Building'
     ],
-    image: '/team-training.jpg'
+    image: '/basketball/full-shot-man-with-basket-ball.jpg'
   },
   {
     id: 'courts',
@@ -119,7 +119,7 @@ const serviceCategories = [
       'Tournament Hosting',
       'Event Management'
     ],
-    image: '/court-1.jpg'
+    image: '/basketball/pexels-pixabay-69773.jpg'
   },
   {
     id: 'assessment',
@@ -134,7 +134,7 @@ const serviceCategories = [
       'Strength & Weakness Analysis',
       'Goal Setting'
     ],
-    image: '/service-defence.jpg'
+    image: '/basketball/full-shot-man-carrying-kid.jpg'
   },
   {
     id: 'youth',
@@ -149,7 +149,7 @@ const serviceCategories = [
       'Safety First Approach',
       'Skill Progression'
     ],
-    image: '/youth-program.jpg'
+    image: '/basketball/179.jpg'
   }
 ];
 

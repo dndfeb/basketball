@@ -213,7 +213,7 @@ export default function About() {
           <div ref={imageRef} className="relative opacity-100" style={{ transform: 'scale(1)' }}>
             <div className="relative w-full h-96 rounded-2xl overflow-hidden">
               <img 
-                src="/coach-1.jpg" 
+                src="/basketball/portrait-man-holding-basketball.jpg" 
                 alt="Basketball coach instructing player on court"
                 className="w-full h-full object-cover"
               />
