@@ -97,7 +97,7 @@ export default function AboutPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary-500 to-accent-500 py-20 pt-20">
+      <section className="bg-gradient-to-br from-primary-500 to-accent-500 py-20 pt-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
             About <span className="text-accent-200">FireGuard</span>
