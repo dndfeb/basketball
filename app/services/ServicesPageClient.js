@@ -124,7 +124,7 @@ export default function ServicesPageClient() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-br from-primary-500 to-accent-500">
+      <section className="relative py-20 pt-20 bg-gradient-to-br from-primary-500 to-accent-500">
         <div className="absolute inset-0 bg-black/20"></div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 
