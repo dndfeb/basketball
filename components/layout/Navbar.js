@@ -63,10 +63,42 @@ export default function Navbar() {
   };
 
   const navItems = [
-    { href: '/', label: 'Home' },
-    { href: '/about', label: 'About' },
-    { href: '/services', label: 'Services' },
-    { href: '/contact', label: 'Contact' },
+    { 
+      href: '/', 
+      label: 'Home',
+      icon: (
+        <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+        </svg>
+      )
+    },
+    { 
+      href: '/about', 
+      label: 'About',
+      icon: (
+        <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/>
+        </svg>
+      )
+    },
+    { 
+      href: '/services', 
+      label: 'Services',
+      icon: (
+        <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+        </svg>
+      )
+    },
+    { 
+      href: '/contact', 
+      label: 'Contact',
+      icon: (
+        <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+        </svg>
+      )
+    },
   ];
 
   return (
@@ -92,12 +124,15 @@ export default function Navbar() {
                   <Link
                     key={item.href}
                     href={item.href}
-                    className={`px-3 py-2 text-sm font-medium transition-colors duration-200 ${
+                    className={`flex items-center gap-2 px-3 py-2 text-sm font-medium transition-colors duration-200 ${
                       isActive(item.href)
                         ? 'text-primary-500'
                         : 'text-neutral-700 hover:text-primary-500'
                     }`}
                   >
+                    <span className="flex-shrink-0">
+                      {item.icon}
+                    </span>
                     {item.label}
                   </Link>
                 ))}
@@ -155,13 +190,16 @@ export default function Navbar() {
                   <Link
                     key={item.href}
                     href={item.href}
-                    className={`block px-3 py-2 text-base font-medium transition-colors duration-200 ${
+                    className={`flex items-center gap-3 px-3 py-2 text-base font-medium transition-colors duration-200 ${
                       isActive(item.href)
                         ? 'text-primary-500'
                         : 'text-neutral-700 hover:text-primary-500'
                     }`}
                     onClick={() => setIsMenuOpen(false)}
                   >
+                    <span className="flex-shrink-0">
+                      {item.icon}
+                    </span>
                     {item.label}
                   </Link>
                 ))}

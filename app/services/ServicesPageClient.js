@@ -2,6 +2,7 @@
 
 import { useEffect, useRef } from 'react';
 import ShuffleServices from '../../components/sections/ShuffleServices';
+import ServiceTabs from '../../components/sections/ServiceTabs';
 // Using inline SVG icons instead of react-icons to avoid import issues
 
 /**
@@ -142,6 +143,11 @@ export default function ServicesPageClient() {
             Your safety is our priority with certified technicians and reliable protection systems.
           </p>
         </div>
+      </section>
+
+      {/* Service Tabs Section */}
+      <section className="py-20 bg-gray-50">
+        <ServiceTabs />
       </section>
 
       {/* Shuffle Products Section */}
