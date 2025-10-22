@@ -116,7 +116,7 @@ export default function Hero() {
   return (
     <section
       ref={heroRef}
-      className="relative h-[85vh] flex items-center justify-center overflow-hidden"
+      className="relative min-h-[100vh] sm:min-h-[90vh] md:min-h-[85vh] flex items-center justify-center overflow-hidden pt-20 sm:pt-24"
       style={{
         backgroundImage: `url('/hero.jpg')`,
         backgroundSize: 'cover',
@@ -137,13 +137,13 @@ export default function Hero() {
         ></div>
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div className="relative z-10 max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 py-6 sm:py-8 md:py-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Content */}
           <div className="text-center lg:text-left">
             <h1
               ref={titleRef}
-              className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6"
+              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 sm:mb-6 leading-tight"
             >
               Elevate Your Game —{' '}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent-500 to-accent-300">
@@ -154,7 +154,7 @@ export default function Hero() {
             
             <p
               ref={subtitleRef}
-              className="text-xl text-gray-200 mb-8 max-w-2xl mx-auto lg:mx-0"
+              className="text-lg sm:text-xl text-gray-200 mb-6 sm:mb-8 max-w-2xl mx-auto lg:mx-0 leading-relaxed"
             >
               Personalized coaching, skill-building clinics, and professional court facilities for players of all levels. 
               Develop your game with expert instruction and state-of-the-art training equipment.
@@ -162,24 +162,24 @@ export default function Hero() {
 
             <div
               ref={ctaRef}
-              className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
+              className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start"
             >
               <Link
                 href="/services"
-                className="btn btn-accent text-lg px-8 py-4 hover:scale-105 transform transition-all duration-300"
+                className="btn btn-accent text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 hover:scale-105 transform transition-all duration-300"
               >
                 Book a Session
               </Link>
               <Link
                 href="/about"
-                className="btn btn-secondary text-lg px-8 py-4 hover:scale-105 transform transition-all duration-300 bg-white/20 text-white border-white/30 hover:bg-white/30"
+                className="btn btn-secondary text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 hover:scale-105 transform transition-all duration-300 bg-white/20 text-white border-white/30 hover:bg-white/30"
               >
                 View Programs
               </Link>
             </div>
 
             {/* Stats */}
-            <div className="mt-12 grid grid-cols-3 gap-8 max-w-md mx-auto lg:mx-0">
+            <div className="mt-8 sm:mt-12 grid grid-cols-3 gap-4 sm:gap-8 max-w-md mx-auto lg:mx-0">
               <div className="text-center">
                 <div className="flex justify-center mb-2">
                   <svg className="h-6 w-6 text-accent-500" fill="currentColor" viewBox="0 0 24 24">
@@ -211,10 +211,10 @@ export default function Hero() {
           </div>
 
           {/* Shield Verification Badge */}
-          <div className="relative flex justify-center">
+          <div className="relative flex justify-center mt-8 lg:mt-0">
             <div
               ref={imageRef}
-              className="relative w-80 h-96 lg:w-96 lg:h-[500px]"
+              className="relative w-64 h-80 sm:w-80 sm:h-96 lg:w-96 lg:h-[500px]"
               style={{
                 clipPath: 'polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)'
               }}
@@ -234,10 +234,10 @@ export default function Hero() {
               </div>
               
               {/* Shield content */}
-              <div className="absolute inset-0 flex flex-col items-center justify-center text-white p-8">
+              <div className="absolute inset-0 flex flex-col items-center justify-center text-white p-4 sm:p-8">
                 {/* Basketball icon */}
-                <div className="relative mb-6">
-                  <svg className="h-24 w-24 mx-auto text-white drop-shadow-lg animate-fire-glow" fill="currentColor" viewBox="0 0 24 24">
+                <div className="relative mb-4 sm:mb-6">
+                  <svg className="h-16 w-16 sm:h-24 sm:w-24 mx-auto text-white drop-shadow-lg animate-fire-glow" fill="currentColor" viewBox="0 0 24 24">
                     <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2" fill="none"/>
                     <path d="M12 2c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zM12 4c-4.42 0-8 3.58-8 8s3.58 8 8 8 8-3.58 8-8-3.58-8-8-8z"/>
                     <path d="M12 6c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6 2.69-6 6-6z"/>
@@ -245,43 +245,43 @@ export default function Hero() {
                   </svg>
                   {/* Checkmark overlay */}
                   <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                    <svg className="h-12 w-12 text-green-400 drop-shadow-lg" fill="currentColor" viewBox="0 0 24 24">
+                    <svg className="h-8 w-8 sm:h-12 sm:w-12 text-green-400 drop-shadow-lg" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
                     </svg>
                   </div>
                 </div>
                 
                 {/* Verification text */}
-                <div className="text-center space-y-4">
-                  <div className="text-2xl lg:text-3xl font-bold text-white drop-shadow-2xl">
+                <div className="text-center space-y-2 sm:space-y-4">
+                  <div className="text-xl sm:text-2xl lg:text-3xl font-bold text-white drop-shadow-2xl">
                     <span className="bg-gradient-to-r from-yellow-300 via-orange-300 to-red-300 bg-clip-text text-transparent">
                       CERTIFIED
                     </span>
                   </div>
-                  <div className="text-lg font-semibold text-white/90 tracking-wide drop-shadow-lg">
+                  <div className="text-sm sm:text-lg font-semibold text-white/90 tracking-wide drop-shadow-lg">
                     Basketball Coach Certified
                   </div>
                   
                   {/* Certification details */}
-                  <div className="space-y-2 mt-6">
-                    <div className="bg-white/20 backdrop-blur-sm rounded-lg px-4 py-2 text-sm font-medium text-white border border-white/30">
+                  <div className="space-y-1 sm:space-y-2 mt-4 sm:mt-6">
+                    <div className="bg-white/20 backdrop-blur-sm rounded-lg px-3 sm:px-4 py-1.5 sm:py-2 text-xs sm:text-sm font-medium text-white border border-white/30">
                       ✓ USA Basketball Certified
                     </div>
-                    <div className="bg-white/20 backdrop-blur-sm rounded-lg px-4 py-2 text-sm font-medium text-white border border-white/30">
+                    <div className="bg-white/20 backdrop-blur-sm rounded-lg px-3 sm:px-4 py-1.5 sm:py-2 text-xs sm:text-sm font-medium text-white border border-white/30">
                       ✓ Licensed & Insured
                     </div>
-                    <div className="bg-white/20 backdrop-blur-sm rounded-lg px-4 py-2 text-sm font-medium text-white border border-white/30">
+                    <div className="bg-white/20 backdrop-blur-sm rounded-lg px-3 sm:px-4 py-1.5 sm:py-2 text-xs sm:text-sm font-medium text-white border border-white/30">
                       ✓ 15+ Years Experience
                     </div>
                   </div>
                   
                   {/* Trust indicator */}
-                  <div className="mt-6 text-center">
-                    <div className="text-sm text-white/80">Trusted by 500+ Players</div>
-                    <div className="flex justify-center mt-2">
+                  <div className="mt-4 sm:mt-6 text-center">
+                    <div className="text-xs sm:text-sm text-white/80">Trusted by 500+ Players</div>
+                    <div className="flex justify-center mt-1 sm:mt-2">
                       <div className="flex space-x-1">
                         {[...Array(5)].map((_, i) => (
-                          <svg key={i} className="h-4 w-4 text-yellow-400" fill="currentColor" viewBox="0 0 24 24">
+                          <svg key={i} className="h-3 w-3 sm:h-4 sm:w-4 text-yellow-400" fill="currentColor" viewBox="0 0 24 24">
                             <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
                           </svg>
                         ))}
@@ -319,9 +319,9 @@ export default function Hero() {
       </div>
 
       {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
-        <div className="w-6 h-10 border-2 border-white/60 rounded-full flex justify-center">
-          <div className="w-1 h-3 bg-white/60 rounded-full mt-2 animate-bounce"></div>
+      <div className="absolute bottom-4 sm:bottom-8 left-1/2 transform -translate-x-1/2">
+        <div className="w-5 h-8 sm:w-6 sm:h-10 border-2 border-white/60 rounded-full flex justify-center">
+          <div className="w-1 h-2 sm:h-3 bg-white/60 rounded-full mt-1 sm:mt-2 animate-bounce"></div>
         </div>
       </div>
     </section>

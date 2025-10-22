@@ -118,7 +118,7 @@ export default function Navbar() {
             </div>
 
             {/* Desktop Navigation */}
-            <div className="hidden md:block">
+            <div className="hidden lg:block">
               <div className="ml-10 flex items-baseline space-x-8">
                 {navItems.map((item) => (
                   <Link
@@ -139,13 +139,36 @@ export default function Navbar() {
               </div>
             </div>
 
+            {/* Tablet Navigation - Compact */}
+            <div className="hidden md:block lg:hidden">
+              <div className="ml-6 flex items-baseline space-x-4">
+                {navItems.slice(0, 3).map((item) => (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    className={`flex items-center gap-1 px-2 py-2 text-xs font-medium transition-colors duration-200 ${
+                      isActive(item.href)
+                        ? 'text-primary-500'
+                        : 'text-neutral-700 hover:text-primary-500'
+                    }`}
+                  >
+                    <span className="flex-shrink-0">
+                      {item.icon}
+                    </span>
+                    <span className="hidden sm:inline">{item.label}</span>
+                  </Link>
+                ))}
+              </div>
+            </div>
+
             {/* CTA Button */}
             <div className="hidden md:block">
               <Link
                 href="/contact"
-                className="btn btn-primary"
+                className="btn btn-primary text-sm px-4 py-2 lg:text-base lg:px-6 lg:py-3"
               >
-                Book Session
+                <span className="hidden sm:inline">Book Session</span>
+                <span className="sm:hidden">Book</span>
               </Link>
             </div>
 
