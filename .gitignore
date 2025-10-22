@@ -1,0 +1,56 @@
+# ============================================
+# Node & Next.js standard ignore
+# ============================================
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# build output
+/.next
+/out
+/build
+
+# production
+/dist
+
+# testing
+/coverage
+
+# local env files
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# misc
+.DS_Store
+*.pem
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# vscode & editor folders
+.vscode/
+.idea/
+*.swp
+
+# typescript build
+*.tsbuildinfo
+next-env.d.ts
+
+# lock files (optional – keep only one type)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# firebase / vercel / custom deploy caches
+.vercel
+.firebase
+.cache
+
+# optional: macOS and system files
+Thumbs.db
