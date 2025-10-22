@@ -1,5 +1,6 @@
 import './globals.css';
 import { Inter } from 'next/font/google';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import SmoothScrollProvider from '../components/providers/SmoothScrollProvider';
 import AuthSessionProvider from '../components/providers/SessionProvider';
 import Navbar from '../components/layout/Navbar';
@@ -105,6 +106,7 @@ export default function RootLayout({ children }) {
             </div>
           </SmoothScrollProvider>
         </AuthSessionProvider>
+        <SpeedInsights />
       </body>
     </html>
   );
