@@ -104,7 +104,7 @@ export default function ContactPage() {
                     value={formData.name}
                     onChange={handleInputChange}
                     required
-                    className="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent text-neutral-900 placeholder-neutral-500"
                     placeholder="Your full name"
                   />
                 </div>
@@ -120,7 +120,7 @@ export default function ContactPage() {
                     value={formData.email}
                     onChange={handleInputChange}
                     required
-                    className="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent text-neutral-900 placeholder-neutral-500"
                     placeholder="your@email.com"
                   />
                 </div>
@@ -137,7 +137,7 @@ export default function ContactPage() {
                     name="phone"
                     value={formData.phone}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent text-neutral-900 placeholder-neutral-500"
                     placeholder="(555) 123-4567"
                   />
                 </div>
@@ -151,7 +151,7 @@ export default function ContactPage() {
                     name="service"
                     value={formData.service}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent text-neutral-900"
                   >
                     <option value="">Select a service</option>
                     {services.map((service) => (
@@ -174,7 +174,7 @@ export default function ContactPage() {
                   onChange={handleInputChange}
                   required
                   rows={6}
-                  className="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+                  className="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent text-neutral-900 placeholder-neutral-500"
                   placeholder="Tell us about your fire safety needs..."
                 />
               </div>

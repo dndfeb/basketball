@@ -258,12 +258,18 @@ const ShuffleServices = () => {
           to protect your property and ensure safety compliance.
         </p>
         <div className="flex flex-col sm:flex-row gap-4">
-          <button className="bg-primary-500 text-white font-semibold py-3 px-6 rounded-lg transition-all hover:bg-primary-600 active:scale-95 shadow-lg hover:shadow-xl">
+          <a 
+            href="/services" 
+            className="bg-primary-500 text-white font-semibold py-3 px-6 rounded-lg transition-all hover:bg-primary-600 active:scale-95 shadow-lg hover:shadow-xl text-center"
+          >
             View All Products
-          </button>
-          <button className="border-2 border-primary-500 text-primary-500 font-semibold py-3 px-6 rounded-lg transition-all hover:bg-primary-500 hover:text-white active:scale-95">
+          </a>
+          <a 
+            href="/contact" 
+            className="border-2 border-primary-500 text-primary-500 font-semibold py-3 px-6 rounded-lg transition-all hover:bg-primary-500 hover:text-white active:scale-95 text-center"
+          >
             Get Quote
-          </button>
+          </a>
         </div>
       </div>
       <div className="shuffle-grid">
