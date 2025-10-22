@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
+// Using inline SVG icons instead of react-icons to avoid import issues
 
 /**
  * About Section Component
@@ -122,24 +123,40 @@ export default function About() {
 
   const features = [
     {
-      icon: '⚡',
-      title: 'Lightning Fast',
-      description: 'Optimized for performance with Next.js and modern web standards.',
+      icon: (
+        <svg className="h-8 w-8 text-primary-500" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/>
+        </svg>
+      ),
+      title: 'Certified Technicians',
+      description: 'NFPA certified professionals with 15+ years of fire safety experience.',
     },
     {
-      icon: '🎨',
-      title: 'Beautiful Design',
-      description: 'Stunning animations and smooth scrolling with GSAP and Locomotive Scroll.',
+      icon: (
+        <svg className="h-8 w-8 text-primary-500" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm4.2 14.2L11 13V7h1.5v5.2l4.5 2.7-.8 1.3z"/>
+        </svg>
+      ),
+      title: '24/7 Emergency Service',
+      description: 'Round-the-clock emergency response and maintenance services.',
     },
     {
-      icon: '📱',
-      title: 'Responsive',
-      description: 'Perfect on all devices with mobile-first responsive design.',
+      icon: (
+        <svg className="h-8 w-8 text-primary-500" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+        </svg>
+      ),
+      title: 'Code Compliance',
+      description: 'All installations meet local fire codes and safety regulations.',
     },
     {
-      icon: '🔧',
-      title: 'Modular',
-      description: 'Clean, maintainable code structure for easy customization.',
+      icon: (
+        <svg className="h-8 w-8 text-primary-500" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/>
+        </svg>
+      ),
+      title: 'Expert Installation',
+      description: 'Professional installation and maintenance of all fire safety systems.',
     },
   ];
 
@@ -151,34 +168,34 @@ export default function About() {
           <div>
             <h2
               ref={titleRef}
-              className="text-4xl font-bold text-gray-900 mb-6"
+              className="text-4xl font-bold text-neutral-900 mb-6"
             >
-              About Our{' '}
-              <span className="text-blue-600">Template</span>
+              About{' '}
+              <span className="text-primary-500">FireGuard</span>
             </h2>
             
             <div ref={contentRef} className="space-y-6">
-              <p className="text-lg text-gray-600 leading-relaxed">
-                This Next.js template is designed for modern web development with
-                a focus on performance, animations, and maintainability. Built with
-                the latest technologies and best practices.
+              <p className="text-lg text-neutral-600 leading-relaxed">
+                FireGuard has been protecting lives and property for over 15 years. 
+                We are a certified fire safety company specializing in comprehensive 
+                fire protection solutions for residential, commercial, and industrial properties.
               </p>
               
-              <p className="text-lg text-gray-600 leading-relaxed">
-                Whether you're building a portfolio, business website, or SaaS
-                application, this template provides the perfect foundation with
-                smooth animations, SEO optimization, and modular architecture.
+              <p className="text-lg text-neutral-600 leading-relaxed">
+                Our team of NFPA-certified technicians provides expert installation, 
+                maintenance, and emergency response services. We ensure all our systems 
+                meet the highest safety standards and local fire codes.
               </p>
 
               <div className="flex items-center space-x-4 pt-4">
                 <div className="flex -space-x-2">
-                  <div className="w-10 h-10 bg-blue-500 rounded-full border-2 border-white"></div>
-                  <div className="w-10 h-10 bg-green-500 rounded-full border-2 border-white"></div>
-                  <div className="w-10 h-10 bg-purple-500 rounded-full border-2 border-white"></div>
+                  <div className="w-10 h-10 bg-primary-500 rounded-full border-2 border-white flex items-center justify-center text-white font-bold">F</div>
+                  <div className="w-10 h-10 bg-accent-500 rounded-full border-2 border-white flex items-center justify-center text-white font-bold">G</div>
+                  <div className="w-10 h-10 bg-primary-600 rounded-full border-2 border-white flex items-center justify-center text-white font-bold">✓</div>
                 </div>
                 <div>
-                  <div className="text-sm font-medium text-gray-900">Trusted by 100+ developers</div>
-                  <div className="text-sm text-gray-500">Building amazing websites</div>
+                  <div className="text-sm font-medium text-neutral-900">Trusted by 500+ businesses</div>
+                  <div className="text-sm text-neutral-500">Protecting what matters most</div>
                 </div>
               </div>
             </div>
@@ -186,13 +203,20 @@ export default function About() {
 
           {/* Image */}
           <div ref={imageRef} className="relative">
-            <div className="relative w-full h-96 bg-gradient-to-br from-gray-100 to-gray-200 rounded-2xl overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-purple-500/20"></div>
+            <div className="relative w-full h-96 rounded-2xl overflow-hidden">
+              <img 
+                src="/content images to be used/istockphoto-1058291060-1024x1024.jpg" 
+                alt="Fire safety equipment and professionals"
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-br from-primary-500/20 to-accent-500/20"></div>
               <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="text-6xl mb-4">💻</div>
-                  <div className="text-2xl font-bold text-gray-800">Modern Development</div>
-                  <div className="text-gray-600">Next.js + GSAP + Tailwind</div>
+                <div className="text-center text-white">
+                  <svg className="h-16 w-16 mx-auto mb-4 text-white" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/>
+                  </svg>
+                  <div className="text-2xl font-bold">Fire Safety Experts</div>
+                  <div className="text-lg opacity-90">Certified & Reliable Protection</div>
                 </div>
               </div>
             </div>
@@ -202,11 +226,11 @@ export default function About() {
         {/* Features Grid */}
         <div className="mt-20">
           <div className="text-center mb-12">
-            <h3 className="text-3xl font-bold text-gray-900 mb-4">
-              Why Choose Our Template?
+            <h3 className="text-3xl font-bold text-neutral-900 mb-4">
+              Why Choose FireGuard?
             </h3>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Built with modern technologies and best practices for optimal performance and developer experience.
+            <p className="text-lg text-neutral-600 max-w-2xl mx-auto">
+              Professional fire safety services with certified technicians and reliable protection systems.
             </p>
           </div>
 
@@ -214,13 +238,15 @@ export default function About() {
             {features.map((feature, index) => (
               <div
                 key={index}
-                className="feature-item text-center p-6 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors duration-300"
+                className="feature-item text-center p-6 bg-neutral-50 rounded-xl hover:bg-neutral-100 transition-colors duration-300 border border-neutral-200"
               >
-                <div className="text-4xl mb-4">{feature.icon}</div>
-                <h4 className="text-xl font-semibold text-gray-900 mb-2">
+                <div className="flex justify-center mb-4">
+                  {feature.icon}
+                </div>
+                <h4 className="text-xl font-semibold text-neutral-900 mb-2">
                   {feature.title}
                 </h4>
-                <p className="text-gray-600">
+                <p className="text-neutral-600">
                   {feature.description}
                 </p>
               </div>

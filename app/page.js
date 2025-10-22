@@ -30,10 +30,10 @@ const BlogPreview = dynamic(() => import('../components/sections/BlogPreview'), 
  */
 export const metadata = {
   title: 'Home',
-  description: 'Welcome to our modern Next.js template with stunning animations and smooth scrolling.',
+  description: 'Professional fire safety solutions protecting lives and property. Fire extinguishers, alarms, safety audits, and 24/7 emergency response services.',
   openGraph: {
-    title: 'Home - NextJS Animated Template',
-    description: 'Welcome to our modern Next.js template with stunning animations and smooth scrolling.',
+    title: 'FireGuard - Professional Fire Safety Solutions',
+    description: 'Professional fire safety solutions protecting lives and property. Fire extinguishers, alarms, safety audits, and 24/7 emergency response services.',
   },
 };
 

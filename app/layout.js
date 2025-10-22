@@ -24,34 +24,34 @@ const inter = Inter({
  */
 export const metadata = {
   title: {
-    default: 'NextJS Animated Template - Modern Web Development',
-    template: '%s | NextJS Animated Template',
+    default: 'FireGuard - Professional Fire Safety Solutions',
+    template: '%s | FireGuard Safety Solutions',
   },
-  description: 'A modern, performance-optimized Next.js template with GSAP animations, Locomotive Scroll, and modular architecture for scalable web applications.',
-  keywords: ['Next.js', 'React', 'GSAP', 'Animations', 'Web Development', 'Template'],
-  authors: [{ name: 'NextJS Template Team' }],
-  creator: 'NextJS Template',
+  description: 'Professional fire safety equipment, installation, and emergency response services. NFPA certified technicians protecting lives and property for over 15 years. 24/7 emergency service available.',
+  keywords: ['fire safety', 'fire extinguishers', 'fire alarms', 'emergency response', 'fire protection', 'safety audits', 'NFPA certified', 'fire safety equipment'],
+  authors: [{ name: 'FireGuard Safety Solutions' }],
+  creator: 'FireGuard Safety Solutions',
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://your-domain.com',
-    siteName: 'NextJS Animated Template',
-    title: 'NextJS Animated Template - Modern Web Development',
-    description: 'A modern, performance-optimized Next.js template with GSAP animations, Locomotive Scroll, and modular architecture for scalable web applications.',
+    url: 'https://fireguard-safety.com',
+    siteName: 'FireGuard Safety Solutions',
+    title: 'FireGuard - Professional Fire Safety Solutions',
+    description: 'Professional fire safety equipment, installation, and emergency response services. NFPA certified technicians protecting lives and property for over 15 years.',
     images: [
       {
-        url: 'https://your-domain.com/og-image.jpg',
+        url: 'https://fireguard-safety.com/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'NextJS Animated Template',
+        alt: 'FireGuard Safety Solutions - Fire Safety Experts',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'NextJS Animated Template - Modern Web Development',
-    description: 'A modern, performance-optimized Next.js template with GSAP animations, Locomotive Scroll, and modular architecture for scalable web applications.',
-    images: ['https://your-domain.com/og-image.jpg'],
+    title: 'FireGuard - Professional Fire Safety Solutions',
+    description: 'Professional fire safety equipment, installation, and emergency response services. NFPA certified technicians protecting lives and property for over 15 years.',
+    images: ['https://fireguard-safety.com/og-image.jpg'],
   },
   robots: {
     index: true,
@@ -73,7 +73,7 @@ export const metadata = {
 export const viewport = {
   width: 'device-width',
   initialScale: 1,
-  themeColor: '#3b82f6',
+  themeColor: '#C1121F',
 };
 
 export default function RootLayout({ children }) {
@@ -83,7 +83,7 @@ export default function RootLayout({ children }) {
         {/* Additional head elements can be added here */}
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-        <meta name="theme-color" content="#3b82f6" />
+        <meta name="theme-color" content="#C1121F" />
       </head>
       <body className={`${inter.className} antialiased`}>
         {/* Session Provider - wraps the entire app */}

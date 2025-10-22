@@ -7,13 +7,13 @@
 
 /* Base styles and CSS variables */
 :root {
-  --primary-color: #3b82f6;
-  --secondary-color: #1e40af;
-  --accent-color: #f59e0b;
-  --text-primary: #1f2937;
-  --text-secondary: #6b7280;
+  --primary-color: #C1121F;
+  --secondary-color: #a10e1a;
+  --accent-color: #F77F00;
+  --text-primary: #1A1A1A;
+  --text-secondary: #525252;
   --background: #ffffff;
-  --surface: #f9fafb;
+  --surface: #F5F5F5;
 }
 
 /* Dark mode variables */
@@ -148,11 +148,15 @@ html.has-scroll-dragging {
 }
 
 .btn-primary {
-  @apply bg-blue-600 text-white hover:bg-blue-700 focus:ring-blue-500;
+  @apply bg-primary-500 text-white hover:bg-primary-600 focus:ring-primary-500 shadow-fire;
 }
 
 .btn-secondary {
-  @apply bg-gray-200 text-gray-900 hover:bg-gray-300 focus:ring-gray-500;
+  @apply bg-neutral-200 text-neutral-900 hover:bg-neutral-300 focus:ring-neutral-500;
+}
+
+.btn-accent {
+  @apply bg-accent-500 text-white hover:bg-accent-600 focus:ring-accent-500 shadow-fire;
 }
 
 /* Card styles */

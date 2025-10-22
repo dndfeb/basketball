@@ -1,296 +1,174 @@
-# Next.js Animated Template
+# FireGuard - Professional Fire Safety Solutions Website
 
-A modern, production-ready Next.js template featuring GSAP animations, Locomotive Scroll, SEO optimization, and modular architecture.
+A modern, responsive Next.js website for a fire safety equipment seller and service provider. Built with professional design principles and optimized for fire safety industry needs.
 
 ## 🚀 Features
 
-- **Next.js 14** with App Router
-- **GSAP Animations** for smooth, performant animations
-- **Locomotive Scroll** for smooth scrolling experience
-- **TailwindCSS** for utility-first styling
-- **Next SEO** for comprehensive SEO management
-- **NextAuth** for authentication
-- **Markdown Blog** with gray-matter and remark
-- **Modular Architecture** for easy maintenance and scaling
-- **Performance Optimized** with dynamic imports
-- **Responsive Design** mobile-first approach
+- **Modern Design**: Clean, professional interface with fire safety branding
+- **Responsive Layout**: Mobile-first design that works on all devices
+- **Fire Safety Theme**: Custom color palette (Deep Red #C1121F, Warm Orange #F77F00)
+- **Professional Icons**: Lucide React icons for consistent visual language
+- **SEO Optimized**: Comprehensive meta tags and structured data
+- **Performance**: Next.js 14 with App Router for optimal performance
+- **Animations**: GSAP-powered smooth animations and transitions
+
+## 🎨 Design System
+
+### Color Palette
+- **Primary**: Deep Red (#C1121F) - Trust, safety, urgency
+- **Accent**: Warm Orange (#F77F00) - Energy, warmth, visibility
+- **Neutral**: Smoke Gray (#F5F5F5) - Clean, professional
+- **Text**: Dark Charcoal (#1A1A1A) - High contrast readability
+
+### Typography
+- **Headings**: Poppins (Bold, confident)
+- **Body**: Inter (Clean, readable)
 
 ## 📁 Project Structure
 
 ```
-├── app/                          # Next.js App Router
-│   ├── globals.css              # Global styles and Tailwind imports
-│   ├── layout.js                # Root layout with SEO and providers
-│   ├── page.js                  # Home page
-│   ├── login/                   # Authentication pages
-│   └── blog/                    # Blog pages
-├── components/                   # Reusable components
-│   ├── layout/                  # Layout components (Navbar, Footer)
-│   ├── sections/                # Page sections (Hero, About, Services)
-│   ├── blog/                    # Blog-specific components
-│   └── providers/               # Context providers
-├── content/                     # Content management
-│   └── posts/                   # Markdown blog posts
-├── lib/                         # Utility functions
-│   └── blog.js                  # Blog utilities
-├── public/                      # Static assets
-└── next-seo.config.js          # SEO configuration
+├── app/
+│   ├── about/page.js          # About page with company story
+│   ├── contact/page.js        # Contact form and information
+│   ├── globals.css           # Global styles and fire safety theme
+│   ├── layout.js             # Root layout with SEO metadata
+│   └── page.js               # Home page
+├── components/
+│   ├── layout/
+│   │   ├── Footer.js         # Footer with emergency contact
+│   │   └── Navbar.js         # Navigation with rounded design
+│   └── sections/
+│       ├── About.js          # About section component
+│       ├── Hero.js           # Hero section with CTA
+│       └── Services.js       # Services grid component
+├── public/
+│   └── hero-fire-safety.jpg  # Hero background image placeholder
+└── tailwind.config.js        # Fire safety color configuration
 ```
 
-## 🛠️ Installation
+## 🛠️ Technologies Used
 
-1. **Clone the repository**
-   ```bash
-   git clone <repository-url>
-   cd nextjs-animated-template
-   ```
+- **Next.js 14** - React framework with App Router
+- **Tailwind CSS** - Utility-first CSS framework
+- **Lucide React** - Professional icon library
+- **GSAP** - Animation library for smooth transitions
+- **Locomotive Scroll** - Smooth scrolling experience
 
-2. **Install dependencies**
+## 🚨 Key Pages
+
+### Home Page
+- Hero section with fire safety messaging
+- Company statistics and trust indicators
+- Services overview
+- About section with certifications
+
+### About Page
+- Company story and mission
+- Team information with certifications
+- Statistics and impact metrics
+- Values and certifications
+
+### Services Page
+- Fire extinguisher sales
+- Fire alarm installation
+- Safety audits and compliance
+- Emergency response services
+- Maintenance and training
+
+### Contact Page
+- Professional contact form
+- Emergency hotline (1-800-FIRE-911)
+- Office information and hours
+- Certifications display
+
+## 🎯 Fire Safety Industry Focus
+
+### Services Offered
+1. **Fire Extinguisher Sales** - Professional-grade equipment
+2. **Fire Alarm Installation** - Complete detection systems
+3. **Safety Audits** - Compliance and risk assessments
+4. **Emergency Response** - 24/7 emergency services
+5. **Maintenance Services** - Regular inspections and servicing
+6. **Safety Training** - Professional training programs
+
+### Certifications
+- NFPA Certified technicians
+- State licensed professionals
+- OSHA compliant operations
+- ISO 9001 quality management
+
+## 🚀 Getting Started
+
+1. **Install Dependencies**
    ```bash
    npm install
    ```
 
-3. **Set up environment variables**
-   ```bash
-   cp .env.example .env.local
-   ```
-   
-   Add your environment variables:
-   ```env
-   NEXTAUTH_SECRET=your-secret-key-here
-   NEXTAUTH_URL=http://localhost:3000
-   ```
-
-4. **Run the development server**
+2. **Run Development Server**
    ```bash
    npm run dev
    ```
 
-5. **Open your browser**
+3. **Open in Browser**
    Navigate to [http://localhost:3000](http://localhost:3000)
 
-## 🎨 Customization
+## 📱 Responsive Design
 
-### Adding New Sections
+- **Mobile First**: Optimized for mobile devices
+- **Tablet Friendly**: Responsive grid layouts
+- **Desktop Enhanced**: Full feature set on larger screens
+- **Touch Optimized**: Easy navigation on touch devices
 
-1. Create a new component in `components/sections/`
-2. Import and use it in your pages
-3. Add GSAP animations as needed
+## 🔧 Customization
 
-Example:
+### Colors
+Update the color palette in `tailwind.config.js`:
 ```javascript
-// components/sections/NewSection.js
-'use client';
-
-import { useEffect, useRef } from 'react';
-import { gsap } from 'gsap';
-
-export default function NewSection() {
-  const sectionRef = useRef(null);
-
-  useEffect(() => {
-    gsap.fromTo(
-      sectionRef.current,
-      { y: 50, opacity: 0 },
-      { y: 0, opacity: 1, duration: 0.8, ease: 'power2.out' }
-    );
-  }, []);
-
-  return (
-    <section ref={sectionRef} className="py-20">
-      {/* Your content */}
-    </section>
-  );
+colors: {
+  primary: {
+    500: '#C1121F', // Deep Red
+  },
+  accent: {
+    500: '#F77F00', // Warm Orange
+  }
 }
 ```
 
-### Adding New Blog Posts
+### Content
+- Update company information in layout components
+- Modify services in `components/sections/Services.js`
+- Customize contact information in `app/contact/page.js`
 
-1. Create a new markdown file in `content/posts/`
-2. Add frontmatter with metadata
-3. Write your content in markdown
+### Images
+Replace placeholder images in the `public/` folder:
+- `hero-fire-safety.jpg` - Hero background image
+- Add company photos and equipment images
 
-Example:
-```markdown
----
-title: "Your Post Title"
-excerpt: "Brief description"
-date: "2024-01-15"
-author: "Your Name"
-category: "Tutorial"
-tags: ["Next.js", "React"]
-readTime: "5 min read"
----
+## 📈 SEO Features
 
-# Your Post Content
+- Comprehensive meta tags
+- Open Graph and Twitter Card support
+- Structured data for fire safety services
+- Mobile-optimized performance
+- Fast loading times
 
-Write your blog post content here using markdown.
-```
+## 🛡️ Security & Compliance
 
-### Customizing Animations
+- Professional fire safety industry standards
+- NFPA compliance messaging
+- Emergency contact prominence
+- Trust indicators and certifications
 
-The template uses GSAP for animations. You can customize them in each component:
+## 📞 Emergency Contact
 
-```javascript
-// Basic animation
-gsap.fromTo(
-  element,
-  { y: 50, opacity: 0 },
-  { y: 0, opacity: 1, duration: 0.8, ease: 'power2.out' }
-);
+**24/7 Emergency Service**: 1-800-FIRE-911
 
-// Scroll-triggered animation
-gsap.fromTo(
-  element,
-  { y: 50, opacity: 0 },
-  {
-    y: 0,
-    opacity: 1,
-    duration: 0.8,
-    scrollTrigger: {
-      trigger: element,
-      start: 'top 80%',
-      end: 'bottom 20%',
-      toggleActions: 'play none none reverse',
-    },
-  }
-);
-```
-
-## 🔐 Authentication
-
-The template includes NextAuth for authentication with two demo accounts:
-
-- **Admin**: `admin@example.com` / `admin123`
-- **Blog Writer**: `writer@example.com` / `writer123`
-
-### Adding New Users
-
-Modify the credentials in `app/api/auth/[...nextauth]/route.js`:
-
-```javascript
-const users = [
-  {
-    id: '1',
-    email: 'newuser@example.com',
-    password: 'password123',
-    name: 'New User',
-    role: 'admin', // or 'blog-writer'
-  },
-  // ... other users
-];
-```
-
-## 📝 Blog Management
-
-### Creating Blog Posts
-
-1. Add markdown files to `content/posts/`
-2. Include proper frontmatter
-3. Use the blog utilities in `lib/blog.js`
-
-### Blog Features
-
-- Search functionality
-- Category filtering
-- Tag system
-- Pagination
-- SEO optimization
-- Related posts
-
-## 🎯 SEO Configuration
-
-The template includes comprehensive SEO setup:
-
-1. **Global SEO** in `next-seo.config.js`
-2. **Page-specific SEO** in each page
-3. **Blog post SEO** with dynamic metadata
-4. **Open Graph** and Twitter Card support
-
-### Customizing SEO
-
-Update `next-seo.config.js` for global changes:
-
-```javascript
-export const defaultSEO = {
-  titleTemplate: '%s | Your Site Name',
-  defaultTitle: 'Your Site Name - Description',
-  description: 'Your site description',
-  // ... other settings
-};
-```
-
-## 🚀 Deployment
-
-### Vercel (Recommended)
-
-1. Push your code to GitHub
-2. Connect your repository to Vercel
-3. Deploy automatically
-
-### Other Platforms
-
-The template is compatible with any platform that supports Next.js:
-
-- Netlify
-- AWS Amplify
-- Railway
-- DigitalOcean App Platform
-
-## 📱 Performance
-
-The template is optimized for performance:
-
-- **Dynamic imports** for code splitting
-- **Image optimization** with Next.js Image
-- **Font optimization** with next/font
-- **CSS optimization** with TailwindCSS
-- **Bundle analysis** with webpack-bundle-analyzer
-
-## 🛠️ Development
-
-### Available Scripts
-
-```bash
-npm run dev          # Start development server
-npm run build        # Build for production
-npm run start        # Start production server
-npm run lint         # Run Prettier formatting
-```
-
-### Code Style
-
-The project uses Prettier for code formatting. Configure it in `.prettierrc`.
-
-## 📚 Learning Resources
-
-- [Next.js Documentation](https://nextjs.org/docs)
-- [GSAP Documentation](https://greensock.com/docs/)
-- [Locomotive Scroll](https://locomotive.ca/)
-- [TailwindCSS Documentation](https://tailwindcss.com/docs)
-- [NextAuth Documentation](https://next-auth.js.org/)
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Submit a pull request
+For immediate fire safety emergencies, the emergency hotline is prominently displayed throughout the website.
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## 🆘 Support
-
-If you have any questions or need help:
-
-1. Check the documentation
-2. Search existing issues
-3. Create a new issue
-4. Contact the maintainers
+This project is created for FireGuard Safety Solutions. All rights reserved.
 
 ---
 
-**Happy coding! 🎉**
-
+**FireGuard Safety Solutions** - Protecting what matters most with professional fire safety solutions since 2008.
