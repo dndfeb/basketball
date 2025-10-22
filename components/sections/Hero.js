@@ -210,67 +210,78 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Image/Visual */}
-          <div className="relative">
+          {/* Shield Verification Badge */}
+          <div className="relative flex justify-center">
             <div
               ref={imageRef}
-              className="relative w-full h-96 lg:h-[500px] bg-gradient-to-br from-orange-500 via-orange-600 to-red-600 rounded-2xl shadow-2xl shadow-orange-900/50 overflow-hidden border border-orange-400/30"
+              className="relative w-80 h-96 lg:w-96 lg:h-[500px]"
+              style={{
+                clipPath: 'polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)'
+              }}
             >
-              {/* Fire safety themed animated background elements */}
-              <div className="absolute inset-0">
-                <div className="absolute top-10 left-10 w-20 h-20 bg-orange-500/20 rounded-full animate-pulse-slow shadow-lg shadow-orange-500/30">
-                  <div className="absolute inset-2 bg-yellow-400/30 rounded-full animate-flame-flicker"></div>
-                </div>
-                <div className="absolute top-32 right-16 w-16 h-16 bg-orange-600/30 rounded-full animate-pulse-slow delay-1000 shadow-lg shadow-orange-600/30">
-                  <div className="absolute inset-2 bg-yellow-300/40 rounded-full animate-flame-flicker delay-500"></div>
-                </div>
-                <div className="absolute bottom-20 left-20 w-12 h-12 bg-orange-400/25 rounded-full animate-pulse-slow delay-2000 shadow-lg shadow-orange-400/30">
-                  <div className="absolute inset-1 bg-yellow-300/50 rounded-full animate-flame-flicker delay-1000"></div>
-                </div>
-                <div className="absolute bottom-32 right-10 w-24 h-24 bg-orange-500/20 rounded-full animate-pulse-slow delay-500 shadow-lg shadow-orange-500/30">
-                  <div className="absolute inset-3 bg-yellow-200/40 rounded-full animate-flame-flicker delay-300"></div>
-                </div>
+              {/* Shield background with gradient */}
+              <div className="absolute inset-0 bg-gradient-to-br from-red-600 via-red-700 to-orange-800 shadow-2xl shadow-red-900/50">
+                {/* Shield border effect */}
+                <div className="absolute inset-0 bg-gradient-to-br from-red-400/30 to-orange-500/30 rounded-sm"></div>
                 
-                {/* Additional fire safety elements */}
-                <div className="absolute top-1/2 left-1/4 w-8 h-8 bg-orange-600/30 rounded-full animate-flame-flicker delay-2000"></div>
-                <div className="absolute top-1/3 right-1/3 w-6 h-6 bg-orange-500/40 rounded-full animate-flame-flicker delay-1500"></div>
-                <div className="absolute bottom-1/4 right-1/4 w-4 h-4 bg-yellow-400/50 rounded-full animate-flame-flicker delay-2500"></div>
+                {/* Animated background pattern */}
+                <div className="absolute inset-0 opacity-20">
+                  <div className="absolute top-8 left-8 w-16 h-16 bg-white/10 rounded-full animate-pulse-slow"></div>
+                  <div className="absolute top-16 right-12 w-12 h-12 bg-white/10 rounded-full animate-pulse-slow delay-1000"></div>
+                  <div className="absolute bottom-20 left-12 w-8 h-8 bg-white/10 rounded-full animate-pulse-slow delay-2000"></div>
+                  <div className="absolute bottom-16 right-8 w-20 h-20 bg-white/10 rounded-full animate-pulse-slow delay-500"></div>
+                </div>
               </div>
               
-              {/* Content overlay */}
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center text-white relative">
-                  {/* Fire extinguisher icon with animation */}
-                  <div className="relative mb-6">
-                    <svg className="h-20 w-20 mx-auto text-white drop-shadow-lg animate-fire-glow" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M12 2C8.13 2 5 5.13 5 9c0 2.38 1.19 4.47 3 5.74V17c0 1.1.9 2 2 2h4c1.1 0 2-.9 2-2v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.87-3.13-7-7-7zm0 2c2.76 0 5 2.24 5 5 0 1.63-.79 3.06-2 3.98V17h-6v-4.02C8.79 12.06 8 10.63 8 9c0-2.76 2.24-5 4-5zm-1 3v4h2V7h-2zm0 6v2h2v-2h-2z"/>
+              {/* Shield content */}
+              <div className="absolute inset-0 flex flex-col items-center justify-center text-white p-8">
+                {/* Shield icon */}
+                <div className="relative mb-6">
+                  <svg className="h-24 w-24 mx-auto text-white drop-shadow-lg animate-fire-glow" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/>
+                  </svg>
+                  {/* Checkmark overlay */}
+                  <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                    <svg className="h-12 w-12 text-green-400 drop-shadow-lg" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
                     </svg>
-                    {/* Animated flame effect */}
-                    <div className="absolute -top-2 left-1/2 transform -translate-x-1/2">
-                      <div className="w-3 h-3 bg-yellow-400 rounded-full animate-flame-flicker"></div>
-                      <div className="absolute top-0 left-0 w-2 h-2 bg-orange-500 rounded-full animate-flame-flicker delay-300"></div>
-                      <div className="absolute top-1 left-1 w-1 h-1 bg-yellow-200 rounded-full animate-flame-flicker delay-150"></div>
+                  </div>
+                </div>
+                
+                {/* Verification text */}
+                <div className="text-center space-y-4">
+                  <div className="text-2xl lg:text-3xl font-bold text-white drop-shadow-2xl">
+                    <span className="bg-gradient-to-r from-yellow-300 via-orange-300 to-red-300 bg-clip-text text-transparent">
+                      VERIFIED
+                    </span>
+                  </div>
+                  <div className="text-lg font-semibold text-white/90 tracking-wide drop-shadow-lg">
+                    Fire Safety Certified
+                  </div>
+                  
+                  {/* Certification details */}
+                  <div className="space-y-2 mt-6">
+                    <div className="bg-white/20 backdrop-blur-sm rounded-lg px-4 py-2 text-sm font-medium text-white border border-white/30">
+                      ✓ NFPA Certified
+                    </div>
+                    <div className="bg-white/20 backdrop-blur-sm rounded-lg px-4 py-2 text-sm font-medium text-white border border-white/30">
+                      ✓ Licensed & Insured
+                    </div>
+                    <div className="bg-white/20 backdrop-blur-sm rounded-lg px-4 py-2 text-sm font-medium text-white border border-white/30">
+                      ✓ 15+ Years Experience
                     </div>
                   </div>
                   
-                  {/* Enhanced text with better typography and contrast */}
-                  <div className="space-y-3">
-                    <div className="text-3xl font-bold text-white drop-shadow-2xl">
-                      <span className="bg-gradient-to-r from-yellow-300 via-orange-400 to-orange-500 bg-clip-text text-transparent">
-                        Fire Safety Experts
-                      </span>
-                    </div>
-                    <div className="text-lg font-semibold text-white/90 tracking-wide drop-shadow-lg">
-                      Certified & Reliable
-                    </div>
-                    
-                    {/* Fire safety badges with better contrast */}
-                    <div className="flex justify-center space-x-3 mt-6">
-                      <div className="bg-white/90 backdrop-blur-sm rounded-full px-4 py-2 text-sm font-bold text-orange-600 border-2 border-orange-400 shadow-lg">
-                        NFPA Certified
-                      </div>
-                      <div className="bg-white/90 backdrop-blur-sm rounded-full px-4 py-2 text-sm font-bold text-red-600 border-2 border-red-400 shadow-lg">
-                        Licensed
+                  {/* Trust indicator */}
+                  <div className="mt-6 text-center">
+                    <div className="text-sm text-white/80">Trusted by 500+ Businesses</div>
+                    <div className="flex justify-center mt-2">
+                      <div className="flex space-x-1">
+                        {[...Array(5)].map((_, i) => (
+                          <svg key={i} className="h-4 w-4 text-yellow-400" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                          </svg>
+                        ))}
                       </div>
                     </div>
                   </div>
@@ -278,19 +289,27 @@ export default function Hero() {
               </div>
             </div>
 
-            {/* Fire safety themed floating elements */}
-            <div className="absolute -top-4 -right-4 w-8 h-8 bg-orange-500 rounded-full animate-emergency-pulse shadow-lg shadow-orange-500/50">
-              <div className="absolute inset-1 bg-yellow-400 rounded-full animate-flame-flicker"></div>
+            {/* Floating verification elements */}
+            <div className="absolute -top-6 -right-6 w-12 h-12 bg-orange-500 rounded-full animate-emergency-pulse shadow-lg shadow-orange-500/50 flex items-center justify-center">
+              <svg className="h-6 w-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+              </svg>
             </div>
-            <div className="absolute -bottom-4 -left-4 w-6 h-6 bg-orange-600 rounded-full animate-emergency-pulse delay-1000 shadow-lg shadow-orange-600/50">
-              <div className="absolute inset-1 bg-yellow-300 rounded-full animate-flame-flicker delay-500"></div>
+            <div className="absolute -bottom-6 -left-6 w-10 h-10 bg-red-500 rounded-full animate-emergency-pulse delay-1000 shadow-lg shadow-red-500/50 flex items-center justify-center">
+              <svg className="h-5 w-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/>
+              </svg>
             </div>
             
-            {/* Additional fire safety elements */}
-            <div className="absolute top-1/4 -left-2 w-4 h-4 bg-orange-400 rounded-full animate-flame-flicker delay-500"></div>
-            <div className="absolute bottom-1/3 -right-2 w-3 h-3 bg-yellow-400 rounded-full animate-flame-flicker delay-700"></div>
+            {/* Additional verification elements */}
+            <div className="absolute top-1/4 -left-3 w-6 h-6 bg-orange-400 rounded-full animate-flame-flicker delay-500 flex items-center justify-center">
+              <div className="w-2 h-2 bg-white rounded-full"></div>
+            </div>
+            <div className="absolute bottom-1/3 -right-3 w-4 h-4 bg-red-400 rounded-full animate-flame-flicker delay-700 flex items-center justify-center">
+              <div className="w-1 h-1 bg-white rounded-full"></div>
+            </div>
             
-            {/* Emergency light effect */}
+            {/* Verification light effect */}
             <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-orange-500 to-transparent opacity-60 animate-emergency-pulse"></div>
           </div>
         </div>
