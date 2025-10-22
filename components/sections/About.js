@@ -35,13 +35,19 @@ export default function About() {
         gsap.registerPlugin(ScrollTrigger);
 
         const ctx = gsap.context(() => {
-          // Title animation
+          // Set initial visibility for immediate display
+          gsap.set([titleRef.current, contentRef.current, imageRef.current], {
+            opacity: 1,
+            y: 0,
+            scale: 1
+          });
+
+          // Title animation on scroll (enhanced effect)
           gsap.fromTo(
             titleRef.current,
-            { y: 50, opacity: 0 },
+            { y: 0, opacity: 1 },
             {
-              y: 0,
-              opacity: 1,
+              y: -20,
               duration: 0.8,
               ease: 'power2.out',
               scrollTrigger: {
@@ -49,17 +55,17 @@ export default function About() {
                 start: 'top 80%',
                 end: 'bottom 20%',
                 toggleActions: 'play none none reverse',
+                scrub: 1,
               },
             }
           );
 
-          // Content animation
+          // Content animation on scroll (enhanced effect)
           gsap.fromTo(
             contentRef.current,
-            { y: 30, opacity: 0 },
+            { y: 0, opacity: 1 },
             {
-              y: 0,
-              opacity: 1,
+              y: -15,
               duration: 0.8,
               ease: 'power2.out',
               delay: 0.2,
@@ -68,17 +74,17 @@ export default function About() {
                 start: 'top 80%',
                 end: 'bottom 20%',
                 toggleActions: 'play none none reverse',
+                scrub: 1,
               },
             }
           );
 
-          // Image animation
+          // Image animation on scroll (enhanced effect)
           gsap.fromTo(
             imageRef.current,
-            { scale: 0.9, opacity: 0 },
+            { scale: 1, opacity: 1 },
             {
-              scale: 1,
-              opacity: 1,
+              scale: 1.05,
               duration: 1,
               ease: 'power2.out',
               delay: 0.4,
@@ -87,11 +93,12 @@ export default function About() {
                 start: 'top 80%',
                 end: 'bottom 20%',
                 toggleActions: 'play none none reverse',
+                scrub: 1,
               },
             }
           );
 
-          // Staggered animation for feature items
+          // Staggered animation for feature items (keep scroll trigger)
           gsap.fromTo(
             '.feature-item',
             { y: 30, opacity: 0 },
@@ -168,13 +175,14 @@ export default function About() {
           <div>
             <h2
               ref={titleRef}
-              className="text-4xl font-bold text-neutral-900 mb-6"
+              className="text-4xl font-bold text-neutral-900 mb-6 opacity-100"
+              style={{ transform: 'translateY(0px)' }}
             >
               About{' '}
               <span className="text-primary-500">FireGuard</span>
             </h2>
             
-            <div ref={contentRef} className="space-y-6">
+            <div ref={contentRef} className="space-y-6 opacity-100" style={{ transform: 'translateY(0px)' }}>
               <p className="text-lg text-neutral-600 leading-relaxed">
                 FireGuard has been protecting lives and property for over 15 years. 
                 We are a certified fire safety company specializing in comprehensive 
@@ -202,7 +210,7 @@ export default function About() {
           </div>
 
           {/* Image */}
-          <div ref={imageRef} className="relative">
+          <div ref={imageRef} className="relative opacity-100" style={{ transform: 'scale(1)' }}>
             <div className="relative w-full h-96 rounded-2xl overflow-hidden">
               <img 
                 src="/content images to be used/istockphoto-1058291060-1024x1024.jpg" 
