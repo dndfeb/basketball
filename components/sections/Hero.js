@@ -124,8 +124,8 @@ export default function Hero() {
         backgroundRepeat: 'no-repeat'
       }}
     >
-      {/* Dark overlay for text readability */}
-      <div className="absolute inset-0 bg-black/40"></div>
+          {/* Dark overlay for text readability */}
+          <div className="absolute inset-0 bg-black/60"></div>
       
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
