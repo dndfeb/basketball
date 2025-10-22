@@ -1,17 +1,17 @@
-# 🔥 FireGuard Safety Solutions
+# 🏀 Elite Basketball Coaching & Court Center
 
 <div align="center">
 
-![FireGuard Logo](https://img.shields.io/badge/FireGuard-Safety%20Solutions-red?style=for-the-badge&logo=fire&logoColor=white)
+![Elite Basketball Logo](https://img.shields.io/badge/Elite%20Basketball-Professional%20Coaching-orange?style=for-the-badge&logo=basketball&logoColor=white)
 
-**Professional Fire Safety Equipment & Services**
+**Professional Basketball Coaching, Training Programs & Court Facilities**
 
 [![Next.js](https://img.shields.io/badge/Next.js-14.0.4-black?style=flat-square&logo=next.js)](https://nextjs.org/)
 [![React](https://img.shields.io/badge/React-18.0-blue?style=flat-square&logo=react)](https://reactjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?style=flat-square&logo=typescript)](https://www.typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-3.3-38B2AC?style=flat-square&logo=tailwind-css)](https://tailwindcss.com/)
 
-[Live Demo](https://fireguard-safety.com) • [Documentation](#documentation) • [Support](#support)
+[Live Demo](https://elitebasketball.com) • [Documentation](#documentation) • [Support](#support)
 
 </div>
 
@@ -19,18 +19,18 @@
 
 ## 🚀 Overview
 
-FireGuard Safety Solutions is a modern, professional website built for a fire safety equipment seller and service provider. The platform showcases comprehensive fire protection services, equipment sales, and emergency response capabilities with a clean, trustworthy design that instills confidence in potential clients.
+Elite Basketball Coaching & Court Center is a modern, professional website built for basketball coaching services, training programs, and court rental facilities. The platform showcases comprehensive basketball development services, skill clinics, and professional court facilities with a clean, energetic design that inspires confidence in players and parents.
 
 ### ✨ Key Features
 
-- 🔥 **Professional Fire Safety Branding** - Deep red and warm orange color scheme
+- 🏀 **Professional Basketball Branding** - Dynamic orange and energetic color scheme
 - 📱 **Fully Responsive Design** - Optimized for all devices and screen sizes
 - ⚡ **Lightning Fast Performance** - Built with Next.js 14 and optimized for speed
 - 🎨 **Modern UI/UX** - Clean, professional design with smooth animations
-- 🖼️ **Real Fire Safety Images** - Professional imagery showcasing actual equipment
+- 🖼️ **Real Basketball Images** - Professional imagery showcasing training and facilities
 - 🔍 **SEO Optimized** - Meta tags, semantic HTML, and performance optimized
-- 📞 **Contact Integration** - Professional contact forms and emergency hotlines
-- 🛡️ **Trust Indicators** - Certifications, licenses, and customer testimonials
+- 📞 **Contact Integration** - Professional contact forms and booking systems
+- 🏆 **Trust Indicators** - Certifications, success rates, and player testimonials
 
 ---
 
@@ -56,11 +56,11 @@ FireGuard Safety Solutions is a modern, professional website built for a fire sa
 
 ### Color Palette
 ```css
-Primary Red:    #C1121F  /* Deep Red - Trust & Safety */
-Accent Orange:  #F77F00  /* Warm Orange - Energy & Action */
-Neutral White:  #FFFFFF  /* Clean & Professional */
-Smoke Gray:     #F5F5F5  /* Subtle Backgrounds */
-Dark Charcoal:  #1A1A1A  /* Primary Text */
+Primary Orange:  #F77F00  /* Energetic Orange - Energy & Action */
+Accent Red:      #C1121F  /* Deep Red - Passion & Determination */
+Neutral White:   #FFFFFF  /* Clean & Professional */
+Court Gray:      #F5F5F5  /* Subtle Backgrounds */
+Dark Charcoal:   #1A1A1A  /* Primary Text */
 ```
 
 ### Typography
@@ -72,14 +72,14 @@ Dark Charcoal:  #1A1A1A  /* Primary Text */
 - **Cards**: Rounded corners with subtle shadows
 - **Buttons**: Professional styling with hover effects
 - **Navigation**: Clean, accessible navigation with mobile support
-- **Forms**: User-friendly contact and inquiry forms
+- **Forms**: User-friendly contact and booking forms
 
 ---
 
 ## 📁 Project Structure
 
 ```
-fireguard-safety/
+elite-basketball/
 ├── app/                          # Next.js App Router
 │   ├── about/                   # About page
 │   ├── contact/                 # Contact page
@@ -96,7 +96,8 @@ fireguard-safety/
 │       ├── Hero.js              # Hero section
 │       └── Services.js          # Services section
 ├── public/                      # Static assets
-│   └── content images to be used/  # Fire safety images
+│   ├── basketball/              # Basketball training images
+│   └── hero.jpg                 # Hero background image
 ├── styles/                      # Additional styles
 ├── tailwind.config.js           # Tailwind configuration
 ├── package.json                 # Dependencies
@@ -115,8 +116,8 @@ fireguard-safety/
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-username/fireguard-safety.git
-   cd fireguard-safety
+   git clone https://github.com/your-username/elite-basketball.git
+   cd elite-basketball
    ```
 
 2. **Install dependencies**
@@ -145,28 +146,28 @@ npm start
 
 ### 🏠 Home Page
 - **Hero Section**: Compelling headline with call-to-action
-- **About Preview**: Company overview and key statistics
-- **Services Showcase**: Featured services with pricing
-- **Trust Indicators**: Certifications and customer count
+- **About Preview**: Coach overview and key statistics
+- **Programs Showcase**: Featured training programs with pricing
+- **Trust Indicators**: Certifications and success rates
 
-### 🛡️ About Page
-- **Company Story**: 15+ years of fire safety expertise
-- **Team Information**: Professional team members
-- **Certifications**: NFPA, OSHA, and industry certifications
-- **Mission & Values**: Company principles and commitment
+### 👨‍🏫 About Page
+- **Coach Story**: 15+ years of basketball coaching expertise
+- **Staff Information**: Professional coaching team members
+- **Certifications**: USA Basketball, NCAA, and CPR certifications
+- **Mission & Values**: Coaching philosophy and commitment
 
-### 🔧 Services Page
-- **Fire Extinguisher Sales**: ABC, CO2, Wet Chemical systems
-- **Fire Alarm Installation**: Complete detection systems
-- **Safety Audits**: Comprehensive compliance assessments
-- **Emergency Response**: 24/7 emergency services
-- **Maintenance Services**: Regular equipment servicing
-- **Safety Training**: Professional training programs
+### 🏀 Services Page
+- **Private Coaching**: One-on-one skill development sessions
+- **Group Clinics**: Intensive skill development for small groups
+- **Team Training**: Practice planning and tactical drills
+- **Court Rental**: Professional court facilities and equipment
+- **Skill Assessment**: Video analysis and performance reports
+- **Youth Programs**: Age-appropriate training for young players
 
 ### 📞 Contact Page
-- **Contact Form**: Professional inquiry form
-- **Emergency Hotline**: 24/7 emergency contact
-- **Office Information**: Address, phone, email, hours
+- **Booking Form**: Professional session booking form
+- **Quick Contact**: Direct phone and email access
+- **Facility Information**: Address, hours, and court availability
 - **Certifications Display**: Trust and credibility indicators
 
 ---
@@ -174,9 +175,9 @@ npm start
 ## 🎯 Key Features Explained
 
 ### Professional Branding
-- **Color Psychology**: Red conveys urgency and safety, orange shows energy and action
+- **Color Psychology**: Orange conveys energy and enthusiasm, red shows passion and determination
 - **Typography**: Bold headings establish authority and trust
-- **Imagery**: Real fire safety equipment builds credibility
+- **Imagery**: Real basketball training scenes build credibility
 
 ### User Experience
 - **Mobile-First**: Responsive design works on all devices
@@ -187,8 +188,8 @@ npm start
 ### Business Features
 - **Lead Generation**: Contact forms and call-to-action buttons
 - **Trust Building**: Certifications, testimonials, and professional imagery
-- **Service Showcase**: Detailed service descriptions with pricing
-- **Emergency Access**: Prominent emergency contact information
+- **Program Showcase**: Detailed service descriptions with pricing
+- **Booking Access**: Easy session booking and scheduling
 
 ---
 
@@ -199,16 +200,16 @@ Update the color palette in `tailwind.config.js`:
 ```javascript
 colors: {
   primary: {
-    500: '#C1121F', // Your primary color
+    500: '#F77F00', // Your primary color
   },
   accent: {
-    500: '#F77F00', // Your accent color
+    500: '#C1121F', // Your accent color
   }
 }
 ```
 
 ### Content
-- **Images**: Replace images in `/public/content images to be used/`
+- **Images**: Replace images in `/public/basketball/`
 - **Text**: Update content in component files
 - **Contact Info**: Modify contact details in Footer.js and Contact page
 
@@ -271,9 +272,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Support
 
-- **Email**: info@fireguard.com
-- **Phone**: 1-800-FIRE-911
-- **Website**: [fireguard-safety.com](https://fireguard-safety.com)
+- **Email**: info@elitebasketball.com
+- **Phone**: (555) COACH-1
+- **Website**: [elitebasketball.com](https://elitebasketball.com)
 
 ---
 
@@ -281,14 +282,14 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - **Next.js Team** for the amazing framework
 - **Tailwind CSS** for the utility-first CSS framework
-- **Fire Safety Professionals** for industry expertise
+- **Basketball Coaches** for industry expertise
 - **Open Source Community** for inspiration and tools
 
 ---
 
 <div align="center">
 
-**Built with ❤️ for Fire Safety Professionals**
+**Built with ❤️ for Basketball Coaches & Players**
 
 [![Made with Next.js](https://img.shields.io/badge/Made%20with-Next.js-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
 [![Powered by Tailwind CSS](https://img.shields.io/badge/Powered%20by-Tailwind%20CSS-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
