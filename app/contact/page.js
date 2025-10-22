@@ -51,12 +51,12 @@ export default function ContactPage() {
   };
 
   const services = [
-    'Fire Extinguisher Sales',
-    'Fire Alarm Installation',
-    'Safety Audits',
-    'Emergency Response',
-    'Maintenance Services',
-    'Safety Training',
+    'Private One-on-One Coaching',
+    'Group Clinics & Camps',
+    'Team Training',
+    'Court Rental & Facilities',
+    'Skill Assessment & Reports',
+    'Youth Development Programs',
     'Other'
   ];
 
@@ -66,11 +66,11 @@ export default function ContactPage() {
       <section className="bg-gradient-to-br from-primary-500 to-accent-500 py-20 pt-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Contact <span className="text-accent-200">FireGuard</span>
+            Contact <span className="text-accent-200">Coach Johnson</span>
           </h1>
           <p className="text-xl text-white/90 max-w-3xl mx-auto">
-            Get in touch with our fire safety experts for a free consultation, 
-            emergency service, or to learn more about our protection solutions.
+            Get in touch with our basketball experts for a free consultation, 
+            trial session, or to learn more about our training programs.
           </p>
         </div>
       </section>
@@ -80,7 +80,7 @@ export default function ContactPage() {
           {/* Contact Form */}
           <div className="bg-white rounded-2xl shadow-fire p-8">
             <h2 className="text-3xl font-bold text-neutral-900 mb-6">
-              Get Your Free Quote
+              Book Your Free Trial Session
             </h2>
             
             {submitStatus === 'success' && (
@@ -144,7 +144,7 @@ export default function ContactPage() {
                 
                 <div>
                   <label htmlFor="service" className="block text-sm font-medium text-neutral-700 mb-2">
-                    Service Needed
+                    Training Program Interest
                   </label>
                   <select
                     id="service"
@@ -153,7 +153,7 @@ export default function ContactPage() {
                     onChange={handleInputChange}
                     className="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent text-neutral-900"
                   >
-                    <option value="">Select a service</option>
+                    <option value="">Select a program</option>
                     {services.map((service) => (
                       <option key={service} value={service}>
                         {service}
@@ -175,7 +175,7 @@ export default function ContactPage() {
                   required
                   rows={6}
                   className="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent text-neutral-900 placeholder-neutral-500"
-                  placeholder="Tell us about your fire safety needs..."
+                  placeholder="Tell us about your basketball training goals..."
                 />
               </div>
 
@@ -191,22 +191,22 @@ export default function ContactPage() {
 
           {/* Contact Information */}
           <div className="space-y-8">
-            {/* Emergency Contact */}
+            {/* Quick Contact */}
             <div className="bg-primary-500 text-white rounded-2xl p-8">
               <div className="flex items-center mb-4">
                 <svg className="h-8 w-8 mr-3 text-accent-300" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
                 </svg>
-                <h3 className="text-2xl font-bold">Emergency Service</h3>
+                <h3 className="text-2xl font-bold">Quick Contact</h3>
               </div>
               <p className="text-primary-100 mb-4">
-                For fire safety emergencies, call our 24/7 hotline:
+                For immediate assistance or questions, call us:
               </p>
               <a 
-                href="tel:+1-800-FIRE-911" 
+                href="tel:+1-555-COACH-1" 
                 className="text-3xl font-bold text-accent-300 hover:text-accent-200 transition-colors"
               >
-                1-800-FIRE-911
+                1-555-COACH-1
               </a>
             </div>
 
@@ -224,8 +224,8 @@ export default function ContactPage() {
                   <div>
                     <h4 className="font-semibold text-neutral-900">Address</h4>
                     <p className="text-neutral-600">
-                      123 Fire Safety Blvd<br />
-                      Safety City, SC 12345
+                      123 Basketball Court Dr<br />
+                      Sports City, SC 12345
                     </p>
                   </div>
                 </div>
@@ -237,8 +237,8 @@ export default function ContactPage() {
                   <div>
                     <h4 className="font-semibold text-neutral-900">Phone</h4>
                     <p className="text-neutral-600">
-                      <a href="tel:+1-555-FIRE-123" className="hover:text-primary-500">
-                        (555) FIRE-123
+                      <a href="tel:+1-555-COACH-1" className="hover:text-primary-500">
+                        (555) COACH-1
                       </a>
                     </p>
                   </div>
@@ -251,8 +251,8 @@ export default function ContactPage() {
                   <div>
                     <h4 className="font-semibold text-neutral-900">Email</h4>
                     <p className="text-neutral-600">
-                      <a href="mailto:info@fireguard.com" className="hover:text-primary-500">
-                        info@fireguard.com
+                      <a href="mailto:info@elitebasketball.com" className="hover:text-primary-500">
+                        info@elitebasketball.com
                       </a>
                     </p>
                   </div>
@@ -263,11 +263,11 @@ export default function ContactPage() {
                     <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm4.2 14.2L11 13V7h1.5v5.2l4.5 2.7-.8 1.3z"/>
                   </svg>
                   <div>
-                    <h4 className="font-semibold text-neutral-900">Business Hours</h4>
+                    <h4 className="font-semibold text-neutral-900">Training Hours</h4>
                     <p className="text-neutral-600">
-                      Monday - Friday: 8:00 AM - 6:00 PM<br />
-                      Saturday: 9:00 AM - 4:00 PM<br />
-                      Sunday: Emergency Service Only
+                      Monday - Friday: 4:00 PM - 9:00 PM<br />
+                      Saturday: 9:00 AM - 6:00 PM<br />
+                      Sunday: 10:00 AM - 4:00 PM
                     </p>
                   </div>
                 </div>
@@ -285,25 +285,25 @@ export default function ContactPage() {
                   <svg className="h-8 w-8 mx-auto mb-2 text-accent-500" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
                   </svg>
-                  <p className="text-sm font-semibold text-neutral-700">NFPA Certified</p>
+                  <p className="text-sm font-semibold text-neutral-700">USA Basketball</p>
                 </div>
                 <div className="text-center">
                   <svg className="h-8 w-8 mx-auto mb-2 text-primary-500" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
                   </svg>
-                  <p className="text-sm font-semibold text-neutral-700">State Licensed</p>
+                  <p className="text-sm font-semibold text-neutral-700">NCAA Licensed</p>
                 </div>
                 <div className="text-center">
                   <svg className="h-8 w-8 mx-auto mb-2 text-primary-500" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/>
                   </svg>
-                  <p className="text-sm font-semibold text-neutral-700">Insured</p>
+                  <p className="text-sm font-semibold text-neutral-700">CPR Certified</p>
                 </div>
                 <div className="text-center">
                   <svg className="h-8 w-8 mx-auto mb-2 text-accent-500" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
                   </svg>
-                  <p className="text-sm font-semibold text-neutral-700">A+ Rating</p>
+                  <p className="text-sm font-semibold text-neutral-700">5-Star Rated</p>
                 </div>
               </div>
             </div>

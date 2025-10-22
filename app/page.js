@@ -30,10 +30,10 @@ const BlogPreview = dynamic(() => import('../components/sections/BlogPreview'), 
  */
 export const metadata = {
   title: 'Home',
-  description: 'Professional fire safety solutions protecting lives and property. Fire extinguishers, alarms, safety audits, and 24/7 emergency response services.',
+  description: 'Professional basketball coaching, skill clinics, team training, and court rentals. Expert coaching for players of all levels with personalized development programs.',
   openGraph: {
-    title: 'FireGuard - Professional Fire Safety Solutions',
-    description: 'Professional fire safety solutions protecting lives and property. Fire extinguishers, alarms, safety audits, and 24/7 emergency response services.',
+    title: 'Elite Basketball Coaching & Court Center - Professional Training',
+    description: 'Professional basketball coaching, skill clinics, team training, and court rentals. Expert coaching for players of all levels with personalized development programs.',
   },
 };
 

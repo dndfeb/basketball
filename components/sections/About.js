@@ -132,38 +132,38 @@ export default function About() {
     {
       icon: (
         <svg className="h-8 w-8 text-primary-500" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/>
+          <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
         </svg>
       ),
-      title: 'Certified Technicians',
-      description: 'NFPA certified professionals with 15+ years of fire safety experience.',
+      title: 'Certified Coaches',
+      description: 'USA Basketball certified professionals with 15+ years of coaching experience.',
     },
     {
       icon: (
         <svg className="h-8 w-8 text-primary-500" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm4.2 14.2L11 13V7h1.5v5.2l4.5 2.7-.8 1.3z"/>
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
         </svg>
       ),
-      title: '24/7 Emergency Service',
-      description: 'Round-the-clock emergency response and maintenance services.',
+      title: 'Proven Results',
+      description: 'Track record of developing players who excel at every level.',
     },
     {
       icon: (
         <svg className="h-8 w-8 text-primary-500" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+          <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
         </svg>
       ),
-      title: 'Code Compliance',
-      description: 'All installations meet local fire codes and safety regulations.',
+      title: 'Personalized Training',
+      description: 'Customized programs tailored to each player\'s unique strengths and goals.',
     },
     {
       icon: (
         <svg className="h-8 w-8 text-primary-500" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/>
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
         </svg>
       ),
-      title: 'Expert Installation',
-      description: 'Professional installation and maintenance of all fire safety systems.',
+      title: 'State-of-the-Art Facilities',
+      description: 'Professional court facilities with modern training equipment and technology.',
     },
   ];
 
@@ -179,31 +179,31 @@ export default function About() {
               style={{ transform: 'translateY(0px)' }}
             >
               About{' '}
-              <span className="text-primary-500">FireGuard</span>
+              <span className="text-primary-500">Coach Johnson</span>
             </h2>
             
             <div ref={contentRef} className="space-y-6 opacity-100" style={{ transform: 'translateY(0px)' }}>
               <p className="text-lg text-neutral-600 leading-relaxed">
-                FireGuard has been protecting lives and property for over 15 years. 
-                We are a certified fire safety company specializing in comprehensive 
-                fire protection solutions for residential, commercial, and industrial properties.
+                Coach Johnson is a certified basketball coach with over 15 years of experience 
+                coaching youth, high school, and semi-pro players. Specializing in fundamentals, 
+                shooting mechanics, defensive IQ, game strategy, and player development.
               </p>
               
               <p className="text-lg text-neutral-600 leading-relaxed">
-                Our team of NFPA-certified technicians provides expert installation, 
-                maintenance, and emergency response services. We ensure all our systems 
-                meet the highest safety standards and local fire codes.
+                Our coaching philosophy focuses on building complete players through personalized 
+                instruction, skill development, and mental toughness training. We ensure every 
+                player reaches their full potential with proven coaching methods and state-of-the-art facilities.
               </p>
 
               <div className="flex items-center space-x-4 pt-4">
                 <div className="flex -space-x-2">
-                  <div className="w-10 h-10 bg-primary-500 rounded-full border-2 border-white flex items-center justify-center text-white font-bold">F</div>
-                  <div className="w-10 h-10 bg-accent-500 rounded-full border-2 border-white flex items-center justify-center text-white font-bold">G</div>
+                  <div className="w-10 h-10 bg-primary-500 rounded-full border-2 border-white flex items-center justify-center text-white font-bold">C</div>
+                  <div className="w-10 h-10 bg-accent-500 rounded-full border-2 border-white flex items-center justify-center text-white font-bold">J</div>
                   <div className="w-10 h-10 bg-primary-600 rounded-full border-2 border-white flex items-center justify-center text-white font-bold">✓</div>
                 </div>
                 <div>
-                  <div className="text-sm font-medium text-neutral-900">Trusted by 500+ businesses</div>
-                  <div className="text-sm text-neutral-500">Protecting what matters most</div>
+                  <div className="text-sm font-medium text-neutral-900">Trusted by 500+ players</div>
+                  <div className="text-sm text-neutral-500">Elevating every game</div>
                 </div>
               </div>
             </div>
@@ -213,18 +213,19 @@ export default function About() {
           <div ref={imageRef} className="relative opacity-100" style={{ transform: 'scale(1)' }}>
             <div className="relative w-full h-96 rounded-2xl overflow-hidden">
               <img 
-                src="/content images to be used/istockphoto-1058291060-1024x1024.jpg" 
-                alt="Fire safety equipment and professionals"
+                src="/coach-1.jpg" 
+                alt="Basketball coach instructing player on court"
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-br from-primary-500/20 to-accent-500/20"></div>
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="text-center text-white">
                   <svg className="h-16 w-16 mx-auto mb-4 text-white" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/>
+                    <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2" fill="none"/>
+                    <path d="M12 2c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zM12 4c-4.42 0-8 3.58-8 8s3.58 8 8 8 8-3.58 8-8-3.58-8-8-8z"/>
                   </svg>
-                  <div className="text-2xl font-bold">Fire Safety Experts</div>
-                  <div className="text-lg opacity-90">Certified & Reliable Protection</div>
+                  <div className="text-2xl font-bold">Basketball Experts</div>
+                  <div className="text-lg opacity-90">Certified & Proven Coaching</div>
                 </div>
               </div>
             </div>
@@ -235,10 +236,10 @@ export default function About() {
         <div className="mt-20">
           <div className="text-center mb-12">
             <h3 className="text-3xl font-bold text-neutral-900 mb-4">
-              Why Choose FireGuard?
+              Why Choose Our Coaching?
             </h3>
             <p className="text-lg text-neutral-600 max-w-2xl mx-auto">
-              Professional fire safety services with certified technicians and reliable protection systems.
+              Professional basketball coaching with certified instructors and proven development programs.
             </p>
           </div>
 

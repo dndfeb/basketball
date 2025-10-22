@@ -2,10 +2,10 @@ import ServicesPageClient from './ServicesPageClient';
 
 export const metadata = {
   title: 'Services',
-  description: 'Professional fire safety services including fire extinguisher sales, alarm installation, safety audits, emergency response, maintenance, and training. NFPA certified technicians.',
+  description: 'Professional basketball coaching services including private coaching, group clinics, team training, court rental, skill assessment, and youth development programs. USA Basketball certified coaches.',
   openGraph: {
-    title: 'FireGuard Services - Professional Fire Safety Solutions',
-    description: 'Professional fire safety services including fire extinguisher sales, alarm installation, safety audits, emergency response, maintenance, and training.',
+    title: 'Elite Basketball Coaching Services - Professional Training Programs',
+    description: 'Professional basketball coaching services including private coaching, group clinics, team training, court rental, skill assessment, and youth development programs.',
   },
 };
 

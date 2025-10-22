@@ -30,88 +30,88 @@ const shuffle = (array) => {
   return array;
 };
 
-// Service product images data - using all images from public folder with some repeats
+// Service product images data - using basketball images
 const serviceImages = [
   {
     id: 1,
-    src: "/content images to be used/extinguisher-17149_1280.jpg",
-    title: "Fire Extinguishers"
+    src: "/service-shooting.jpg",
+    title: "Private Coaching"
   },
   {
     id: 2,
-    src: "/content images to be used/istockphoto-2161672281-1024x1024.jpg",
-    title: "Fire Alarms"
+    src: "/clinic-1.jpg",
+    title: "Group Clinics"
   },
   {
     id: 3,
-    src: "/content images to be used/istockphoto-2230952154-1024x1024.jpg",
-    title: "Safety Equipment"
+    src: "/team-training.jpg",
+    title: "Team Training"
   },
   {
     id: 4,
-    src: "/content images to be used/istockphoto-2239484945-1024x1024.jpg",
-    title: "Emergency Response"
+    src: "/court-1.jpg",
+    title: "Court Rental"
   },
   {
     id: 5,
-    src: "/content images to be used/istockphoto-960450450-1024x1024.jpg",
-    title: "Maintenance"
+    src: "/service-defence.jpg",
+    title: "Skill Assessment"
   },
   {
     id: 6,
-    src: "/content images to be used/extinguisher-17149_960_720.jpg",
-    title: "Training"
+    src: "/youth-program.jpg",
+    title: "Youth Programs"
   },
   {
     id: 7,
-    src: "/content images to be used/istockphoto-1058291060-1024x1024.jpg",
-    title: "Fire Safety"
+    src: "/coach-1.jpg",
+    title: "Expert Coaching"
   },
   {
     id: 8,
-    src: "/content images to be used/11975.jpg",
-    title: "Detection Systems"
+    src: "/coach-2.jpg",
+    title: "Professional Training"
   },
   {
     id: 9,
-    src: "/content images to be used/179.jpg",
-    title: "Safety Audits"
+    src: "/clinic-2.jpg",
+    title: "Basketball Clinics"
   },
   {
     id: 10,
-    src: "/content images to be used/20944815.jpg",
-    title: "Emergency Services"
+    src: "/court-2.jpg",
+    title: "Court Facilities"
   },
   {
     id: 11,
-    src: "/content images to be used/2307.i504.001.P.m005.c33.fire extinguisher set.jpg",
-    title: "Equipment Sales"
+    src: "/service-shooting.jpg",
+    title: "Shooting Training"
   },
   {
     id: 12,
-    src: "/content images to be used/6035441.jpg",
-    title: "Fire Protection"
+    src: "/service-defence.jpg",
+    title: "Defensive Skills"
   },
   {
     id: 13,
-    src: "/content images to be used/u88o_gdx9_170505.jpg",
-    title: "Safety Training"
+    src: "/youth-program.jpg",
+    title: "Youth Development"
   },
   // Repeat some popular images to fill 16 slots
   {
     id: 14,
-    src: "/content images to be used/extinguisher-17149_1280.jpg",
-    title: "Fire Extinguishers Pro"
+    src: "/service-shooting.jpg",
+    title: "Advanced Shooting"
   },
   {
     id: 15,
-    src: "/content images to be used/istockphoto-2161672281-1024x1024.jpg",
-    title: "Advanced Alarms"
+    src: "/clinic-1.jpg",
+    title: "Elite Clinics"
   },
   {
     id: 16,
-    src: "/content images to be used/istockphoto-2230952154-1024x1024.jpg",
-    title: "Safety Solutions"
+    src: "/team-training.jpg",
+    title: "Team Development"
   },
 ];
 
@@ -247,28 +247,28 @@ const ShuffleServices = () => {
     <section ref={sectionRef} className="w-full px-8 py-12 grid grid-cols-1 lg:grid-cols-2 items-center gap-12 max-w-7xl mx-auto">
       <div className="shuffle-content">
         <span className="block mb-4 text-xs md:text-sm text-primary-500 font-medium uppercase tracking-wider">
-          Our Products
+          Our Programs
         </span>
         <h3 className="text-4xl md:text-5xl font-bold text-neutral-900 mb-6">
-          Fire Safety <span className="text-primary-500">Products</span>
+          Basketball <span className="text-primary-500">Training</span>
         </h3>
         <p className="text-base md:text-lg text-neutral-600 my-4 md:my-6 leading-relaxed">
-          Discover our comprehensive range of fire safety products and equipment. 
-          From extinguishers to alarm systems, we provide professional-grade solutions 
-          to protect your property and ensure safety compliance.
+          Discover our comprehensive range of basketball training programs and services. 
+          From private coaching to team training, we provide professional-grade solutions 
+          to develop your skills and elevate your game.
         </p>
         <div className="flex flex-col sm:flex-row gap-4">
           <a 
             href="/services" 
             className="bg-primary-500 text-white font-semibold py-3 px-6 rounded-lg transition-all hover:bg-primary-600 active:scale-95 shadow-lg hover:shadow-xl text-center"
           >
-            View All Products
+            View All Programs
           </a>
           <a 
             href="/contact" 
             className="border-2 border-primary-500 text-primary-500 font-semibold py-3 px-6 rounded-lg transition-all hover:bg-primary-500 hover:text-white active:scale-95 text-center"
           >
-            Get Quote
+            Book Session
           </a>
         </div>
       </div>

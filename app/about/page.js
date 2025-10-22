@@ -61,36 +61,36 @@ export default function AboutPage() {
 
   const stats = [
     { number: '15+', label: 'Years of Experience' },
-    { number: '500+', label: 'Properties Protected' },
-    { number: '24/7', label: 'Emergency Service' },
-    { number: '100%', label: 'Customer Satisfaction' }
+    { number: '500+', label: 'Players Trained' },
+    { number: '100%', label: 'Success Rate' },
+    { number: '50+', label: 'Championships Won' }
   ];
 
   const certifications = [
-    { name: 'NFPA Certified', description: 'National Fire Protection Association' },
-    { name: 'State Licensed', description: 'Licensed in all 50 states' },
-    { name: 'OSHA Compliant', description: 'Occupational Safety and Health Administration' },
-    { name: 'ISO 9001', description: 'Quality Management System' }
+    { name: 'USA Basketball Certified', description: 'USA Basketball Coaching Certification' },
+    { name: 'NCAA Licensed', description: 'NCAA Coaching License' },
+    { name: 'CPR Certified', description: 'First Aid and CPR Certification' },
+    { name: 'Youth Sports Certified', description: 'Youth Sports Safety Certification' }
   ];
 
   const team = [
     {
-      name: 'John Smith',
-      role: 'Chief Fire Safety Officer',
+      name: 'Coach Johnson',
+      role: 'Head Basketball Coach',
       experience: '20+ years',
-      certifications: ['NFPA Master', 'OSHA Certified']
+      certifications: ['USA Basketball Master', 'NCAA Certified']
     },
     {
-      name: 'Sarah Johnson',
-      role: 'Lead Installation Technician',
+      name: 'Coach Williams',
+      role: 'Assistant Coach',
       experience: '15+ years',
-      certifications: ['Fire Alarm Specialist', 'Emergency Response']
+      certifications: ['Youth Development Specialist', 'Skills Training']
     },
     {
-      name: 'Mike Chen',
-      role: 'Safety Inspector',
+      name: 'Coach Davis',
+      role: 'Strength & Conditioning Coach',
       experience: '12+ years',
-      certifications: ['Code Compliance', 'Risk Assessment']
+      certifications: ['Sports Performance', 'Injury Prevention']
     }
   ];
 
@@ -100,11 +100,11 @@ export default function AboutPage() {
       <section className="bg-gradient-to-br from-primary-500 to-accent-500 py-20 pt-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            About <span className="text-accent-200">FireGuard</span>
+            About <span className="text-accent-200">Coach Johnson</span>
           </h1>
           <p className="text-xl text-white/90 max-w-3xl mx-auto">
-            Your trusted partner in fire safety for over 15 years. 
-            We protect what matters most with certified expertise and reliable service.
+            Your trusted partner in basketball development for over 15 years. 
+            We elevate every player with certified expertise and proven coaching methods.
           </p>
         </div>
       </section>
@@ -119,38 +119,39 @@ export default function AboutPage() {
               </h2>
               <div className="space-y-6 text-lg text-neutral-600">
                 <p>
-                  Founded in 2008, FireGuard began with a simple mission: to protect 
-                  lives and property through superior fire safety solutions. What started 
-                  as a small family business has grown into a trusted industry leader, 
-                  serving hundreds of clients across the region.
+                  Founded in 2008, Elite Basketball Coaching began with a simple mission: to develop 
+                  players through superior coaching and training programs. What started 
+                  as a small local coaching business has grown into a trusted development center, 
+                  serving hundreds of players across the region.
                 </p>
                 <p>
-                  Our founder, John Smith, spent over two decades as a firefighter before 
-                  establishing FireGuard. His firsthand experience with fire emergencies 
-                  drives our commitment to prevention, preparedness, and rapid response.
+                  Our founder, Coach Johnson, spent over two decades playing and coaching basketball before 
+                  establishing Elite Basketball Coaching. His firsthand experience with player development 
+                  drives our commitment to fundamentals, skill building, and character development.
                 </p>
                 <p>
-                  Today, our team of certified professionals continues this legacy, 
-                  combining cutting-edge technology with time-tested safety practices 
-                  to deliver comprehensive fire protection services.
+                  Today, our team of certified coaches continues this legacy, 
+                  combining cutting-edge training methods with time-tested coaching practices 
+                  to deliver comprehensive basketball development services.
                 </p>
               </div>
             </div>
             <div className="relative">
               <div className="relative w-full h-96 rounded-2xl overflow-hidden">
                 <img 
-                  src="/content images to be used/istockphoto-2161672281-1024x1024.jpg" 
-                  alt="Fire safety professionals at work"
+                  src="/coach-2.jpg" 
+                  alt="Basketball coach working with players on court"
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-br from-primary-500/30 to-accent-500/30"></div>
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="text-center text-white">
                     <svg className="h-16 w-16 mx-auto mb-4 text-white" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/>
+                      <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2" fill="none"/>
+                      <path d="M12 2c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zM12 4c-4.42 0-8 3.58-8 8s3.58 8 8 8 8-3.58 8-8-3.58-8-8-8z"/>
                     </svg>
-                    <div className="text-2xl font-bold">Protecting Since 2008</div>
-                    <div className="text-lg opacity-90">15+ Years of Trusted Service</div>
+                    <div className="text-2xl font-bold">Coaching Since 2008</div>
+                    <div className="text-lg opacity-90">15+ Years of Player Development</div>
                   </div>
                 </div>
               </div>
@@ -162,7 +163,7 @@ export default function AboutPage() {
         <section className="about-section mb-20">
           <div className="bg-neutral-100 rounded-2xl p-12">
             <h2 className="text-3xl font-bold text-neutral-900 text-center mb-12">
-              Our Impact
+              Our Success
             </h2>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               {stats.map((stat, index) => (
@@ -186,8 +187,8 @@ export default function AboutPage() {
               Our Mission & Values
             </h2>
             <p className="text-xl text-neutral-600 max-w-3xl mx-auto">
-              We are committed to providing the highest level of fire safety protection 
-              through innovation, expertise, and unwavering dedication to our clients.
+              We are committed to providing the highest level of basketball development 
+              through innovation, expertise, and unwavering dedication to our players.
             </p>
           </div>
 
@@ -200,8 +201,8 @@ export default function AboutPage() {
               </div>
               <h3 className="text-2xl font-bold text-neutral-900 mb-4">Mission</h3>
               <p className="text-neutral-600">
-                To protect lives and property through comprehensive fire safety solutions, 
-                ensuring peace of mind for our clients and their communities.
+                To develop complete basketball players through comprehensive training programs, 
+                ensuring success on and off the court for our players and their families.
               </p>
             </div>
 
@@ -213,8 +214,8 @@ export default function AboutPage() {
               </div>
               <h3 className="text-2xl font-bold text-neutral-900 mb-4">Excellence</h3>
               <p className="text-neutral-600">
-                We maintain the highest standards in everything we do, from equipment 
-                selection to installation and ongoing maintenance services.
+                We maintain the highest standards in everything we do, from training 
+                methods to facility management and ongoing player development services.
               </p>
             </div>
 
@@ -227,7 +228,7 @@ export default function AboutPage() {
               <h3 className="text-2xl font-bold text-neutral-900 mb-4">Integrity</h3>
               <p className="text-neutral-600">
                 Honest, transparent communication and fair pricing ensure long-term 
-                partnerships built on trust and mutual respect.
+                relationships built on trust and mutual respect with players and families.
               </p>
             </div>
           </div>
@@ -237,11 +238,11 @@ export default function AboutPage() {
         <section className="about-section mb-20">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-neutral-900 mb-6">
-              Meet Our Team
+              Meet Our Coaching Staff
             </h2>
             <p className="text-xl text-neutral-600 max-w-3xl mx-auto">
-              Our certified professionals bring decades of combined experience 
-              in fire safety, emergency response, and risk assessment.
+              Our certified coaches bring decades of combined experience 
+              in basketball development, player training, and team building.
             </p>
           </div>
 
@@ -283,7 +284,7 @@ export default function AboutPage() {
             </h2>
             <p className="text-xl text-neutral-600 max-w-3xl mx-auto">
               We maintain the highest industry certifications and licenses to ensure 
-              the safety and compliance of all our services.
+              the quality and safety of all our coaching services.
             </p>
           </div>
 

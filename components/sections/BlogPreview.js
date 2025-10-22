@@ -84,36 +84,36 @@ export default function BlogPreview() {
   const blogPosts = [
     {
       id: 1,
-      title: 'Getting Started with Next.js 14 and App Router',
-      excerpt: 'Learn how to build modern web applications with the latest Next.js features including the new App Router and improved performance.',
-      author: 'John Doe',
+      title: '5 Essential Basketball Fundamentals Every Player Should Master',
+      excerpt: 'Learn the core basketball fundamentals that form the foundation of every great player\'s game, from shooting mechanics to defensive positioning.',
+      author: 'Coach Johnson',
       date: '2024-01-15',
       readTime: '5 min read',
-      category: 'Tutorial',
+      category: 'Fundamentals',
       image: '/api/placeholder/400/250',
-      slug: 'getting-started-nextjs-14-app-router',
+      slug: '5-essential-basketball-fundamentals',
     },
     {
       id: 2,
-      title: 'Mastering GSAP Animations in React',
-      excerpt: 'Discover advanced techniques for creating smooth, performant animations in React applications using GSAP.',
-      author: 'Jane Smith',
+      title: 'Building Mental Toughness on the Basketball Court',
+      excerpt: 'Discover strategies for developing mental toughness and resilience that will help you perform under pressure and overcome challenges.',
+      author: 'Coach Williams',
       date: '2024-01-10',
       readTime: '8 min read',
-      category: 'Animation',
+      category: 'Mental Game',
       image: '/api/placeholder/400/250',
-      slug: 'mastering-gsap-animations-react',
+      slug: 'building-mental-toughness-basketball',
     },
     {
       id: 3,
-      title: 'Building Responsive UIs with Tailwind CSS',
-      excerpt: 'A comprehensive guide to creating beautiful, responsive user interfaces using Tailwind CSS utility classes.',
-      author: 'Mike Johnson',
+      title: 'Youth Basketball Development: Age-Appropriate Training',
+      excerpt: 'A comprehensive guide to developing young basketball players with age-appropriate training methods and skill progression.',
+      author: 'Coach Davis',
       date: '2024-01-05',
       readTime: '6 min read',
-      category: 'Design',
+      category: 'Youth Development',
       image: '/api/placeholder/400/250',
-      slug: 'building-responsive-uis-tailwind-css',
+      slug: 'youth-basketball-development-training',
     },
   ];
 
@@ -134,8 +134,8 @@ export default function BlogPreview() {
             Latest <span className="text-blue-600">Articles</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Stay updated with the latest trends, tutorials, and insights in web development,
-            design, and modern technologies.
+            Stay updated with the latest basketball training tips, coaching insights,
+            and player development strategies from our expert coaching staff.
           </p>
         </div>
 

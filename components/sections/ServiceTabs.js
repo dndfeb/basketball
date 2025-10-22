@@ -62,99 +62,99 @@ const FireSafetyIcons = {
 // Service categories with their respective icons and data
 const serviceCategories = [
   {
-    id: 'extinguishers',
-    name: 'Fire Extinguishers',
+    id: 'private',
+    name: 'Private Coaching',
     icon: FireSafetyIcons.extinguisher,
-    description: 'Professional-grade fire extinguishers for all types of fires',
+    description: 'Personalized one-on-one basketball training sessions',
     services: [
-      'ABC Dry Chemical Extinguishers',
-      'CO2 Fire Suppression Systems',
-      'Wet Chemical Systems',
-      'Foam Fire Suppression',
-      'Water Mist Systems',
-      'Clean Agent Systems'
+      'Fundamentals Development',
+      'Shooting Mechanics',
+      'Ball Handling Skills',
+      'Defensive Techniques',
+      'Game Strategy',
+      'Mental Toughness Training'
     ],
-    image: '/content images to be used/extinguisher-17149_1280.jpg'
+    image: '/service-shooting.jpg'
   },
   {
-    id: 'alarms',
-    name: 'Fire Alarms',
+    id: 'clinics',
+    name: 'Group Clinics',
     icon: FireSafetyIcons.alarm,
-    description: 'Complete fire detection and alarm systems',
+    description: 'Intensive skill development for small groups',
     services: [
-      'Smoke Detectors & Alarms',
-      'Heat Detection Systems',
-      'Manual Pull Stations',
-      'Voice Evacuation Systems',
-      'Fire Alarm Monitoring',
-      'Emergency Communication'
+      'High-Energy Drills',
+      'Competitive Scrimmages',
+      'Skill Stations',
+      'Team Building',
+      'Position-Specific Training',
+      'Conditioning Programs'
     ],
-    image: '/content images to be used/istockphoto-2161672281-1024x1024.jpg'
+    image: '/clinic-1.jpg'
   },
   {
-    id: 'safety',
-    name: 'Safety Audits',
+    id: 'teams',
+    name: 'Team Training',
     icon: FireSafetyIcons.shield,
-    description: 'Comprehensive fire safety inspections and compliance',
+    description: 'Comprehensive team development programs',
     services: [
-      'Code Compliance Inspections',
-      'Fire Risk Assessments',
-      'Emergency Planning',
-      'Safety Training Programs',
-      'Documentation & Reporting',
-      'Regulatory Compliance'
+      'Tactical Sessions',
+      'Team Performance Analysis',
+      'Strategy Development',
+      'Game Preparation',
+      'Leadership Training',
+      'Team Chemistry Building'
     ],
-    image: '/content images to be used/istockphoto-2230952154-1024x1024.jpg'
+    image: '/team-training.jpg'
   },
   {
-    id: 'emergency',
-    name: 'Emergency Response',
+    id: 'courts',
+    name: 'Court Rental',
     icon: FireSafetyIcons.emergency,
-    description: '24/7 emergency fire safety services',
+    description: 'Professional court facilities and equipment',
     services: [
-      '24/7 Emergency Service',
-      'Rapid Response Teams',
-      'Emergency Repairs',
-      'System Testing & Maintenance',
-      'Emergency Evacuation Support',
-      'Post-Incident Services'
+      'Full-Size Courts',
+      'Equipment Rental',
+      'Flexible Booking',
+      'Group Rates',
+      'Tournament Hosting',
+      'Event Management'
     ],
-    image: '/content images to be used/istockphoto-2239484945-1024x1024.jpg'
+    image: '/court-1.jpg'
   },
   {
-    id: 'maintenance',
-    name: 'Maintenance',
+    id: 'assessment',
+    name: 'Skill Assessment',
     icon: FireSafetyIcons.maintenance,
-    description: 'Regular maintenance and inspection services',
+    description: 'Comprehensive player evaluation and development',
     services: [
-      'Monthly Safety Inspections',
-      'Annual System Testing',
-      'Equipment Servicing',
-      'Preventive Maintenance',
-      'Documentation & Records',
-      'Compliance Reporting'
+      'Video Analysis',
+      'Performance Reports',
+      'Improvement Plans',
+      'Progress Tracking',
+      'Strength & Weakness Analysis',
+      'Goal Setting'
     ],
-    image: '/content images to be used/istockphoto-960450450-1024x1024.jpg'
+    image: '/service-defence.jpg'
   },
   {
-    id: 'training',
-    name: 'Safety Training',
+    id: 'youth',
+    name: 'Youth Programs',
     icon: FireSafetyIcons.training,
-    description: 'Professional fire safety training programs',
+    description: 'Age-appropriate training for young players',
     services: [
-      'Fire Safety Basics',
-      'Evacuation Procedures',
-      'Equipment Operation Training',
-      'Emergency Response Training',
-      'Safety Certification',
-      'Workplace Safety Programs'
+      'Age-Specific Training',
+      'Fun Learning Environment',
+      'Character Development',
+      'Parent Updates',
+      'Safety First Approach',
+      'Skill Progression'
     ],
-    image: '/content images to be used/extinguisher-17149_960_720.jpg'
+    image: '/youth-program.jpg'
   }
 ];
 
 const ServiceTabs = () => {
-  const [activeTab, setActiveTab] = useState('extinguishers');
+  const [activeTab, setActiveTab] = useState('private');
   const [mounted, setMounted] = useState(false);
   const sectionRef = useRef(null);
   const tabRefs = useRef({});
@@ -224,11 +224,11 @@ const ServiceTabs = () => {
     <section ref={sectionRef} className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <div className="text-center mb-12">
         <h2 className="text-4xl md:text-5xl font-bold text-neutral-900 mb-4">
-          Our <span className="text-primary-500">Services</span>
+          Our <span className="text-primary-500">Programs</span>
         </h2>
         <p className="text-xl text-neutral-600 max-w-3xl mx-auto">
-          Comprehensive fire safety solutions tailored to your specific needs. 
-          Choose from our range of professional services below.
+          Comprehensive basketball training programs tailored to your specific needs. 
+          Choose from our range of professional coaching services below.
         </p>
       </div>
 
